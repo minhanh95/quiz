@@ -14,12 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const finalScoreElement = document.getElementById('final-score');
     const performanceCommentElement = document.getElementById('performance-comment');
     const progressBar = document.getElementById('progress-bar');
+    const timerElement = document.getElementById('timer');
 
     // Quiz variables
     let currentQuestionIndex = 0;
     let score = 0;
     let questions = [];
     let selectedOption = null;
+    let timeLeft = 600; // 10 phút = 600 giây
+    let timerInterval;
 
     // Quiz questions
     const quizQuestions = [
@@ -163,6 +166,52 @@ document.addEventListener('DOMContentLoaded', function() {
         score = 0;
         updateScore();
         showQuestion();
+        // Khởi động đồng hồ đếm ngược
+        timeLeft = 600; // 10 phút
+        updateTimerDisplay();
+        startTimer();
+    }
+
+    // Cập nhật hiển thị đồng hồ
+    function updateTimerDisplay() {
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerElement.textContent = `Thời gian: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        
+        // Thay đổi màu sắc khi gần hết thời gian
+        if (timeLeft <= 60) { // 1 phút cuối
+            timerElement.classList.remove('bg-primary');
+            timerElement.classList.add('bg-danger');
+        } else if (timeLeft <= 120) { // 2 phút cuối
+            timerElement.classList.remove('bg-primary');
+            timerElement.classList.add('bg-warning');
+        }
+    }
+
+    // Bắt đầu đếm ngược
+    function startTimer() {
+        clearInterval(timerInterval); // Xóa interval cũ nếu có
+        timerInterval = setInterval(function() {
+            timeLeft--;
+            updateTimerDisplay();
+            
+            if (timeLeft <= 0) {
+                // Hết thời gian
+                clearInterval(timerInterval);
+                endQuizDueToTimeout();
+            }
+        }, 1000);
+    }
+
+    // Dừng đồng hồ đếm ngược
+    function stopTimer() {
+        clearInterval(timerInterval);
+    }
+
+    // Kết thúc bài kiểm tra khi hết thời gian
+    function endQuizDueToTimeout() {
+        alert("Đã hết thời gian làm bài!");
+        showResults();
     }
 
     // Display the current question
@@ -301,6 +350,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Show the final results
     function showResults() {
+        // Dừng đồng hồ đếm ngược khi hiển thị kết quả
+        stopTimer();
         quizScreen.style.display = 'none';
         resultsScreen.style.display = 'block';
         

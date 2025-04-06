@@ -103,6 +103,20 @@
         .btn-check {
             margin-top: 10px;
         }
+        /* Styles for timer */
+        #timer {
+            font-weight: bold;
+            transition: background-color 0.5s ease;
+            min-width: 120px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border-radius: 20px;
+        }
+        #timer.bg-warning {
+            color: #000;
+        }
     </style>
 </head>
 <body>
@@ -119,8 +133,9 @@
                     </div>
                     
                     <div id="quiz-screen" style="display: none;">
-                        <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
                             <span id="question-count">Câu hỏi 1 trên 10</span>
+                            <span id="timer" class="badge bg-primary fs-6 px-3 py-2">Thời gian: 10:00</span>
                             <span id="score">Điểm: 0</span>
                         </div>
                         <div class="progress">
