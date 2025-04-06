@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             question: "Kích thước của sân bóng đá là hình chữ nhật có chiều dài 105 m và chiều rộng 68m. Em hãy tính diện tích sân bóng đó với số đo là héc-ta.",
-            options: ["7140ha", "7,14ha", "71,40ha", "0,714ha"],
-            answer: "0,714ha",
-            explanation: "Diện tích = 105m × 68m = 7140m². 1ha = 10000m² nên 7140m² = 0,714ha."
+            options: ["7140 ha", "7,14 ha", "71,40 ha", "0,714 ha"],
+            answer: "0,714 ha",
+            explanation: "Diện tích = 105 m × 68 m = 7140 m². 1 ha = 10000 m² nên 7140 m² = 0,714 ha."
         },
         {
             question: "Giá trị của biểu thức 4,59 + 34 : 2 là:",
@@ -54,34 +54,34 @@ document.addEventListener('DOMContentLoaded', function() {
             explanation: "4,59 + 34 : 2 = 4,59 + 17 = 21,59."
         },
         {
-            question: "Một hình thang có diện tích bằng 47,25m2 và chiều cao bằng 6,3m. Trung bình cộng độ dài hai đáy là:",
-            options: ["3,75m", "7,5m", "10,15m", "15m"],
-            answer: "7,5m",
-            explanation: "Diện tích hình thang = (a + b) × h/2, trong đó (a + b) là tổng độ dài hai đáy và h là chiều cao. Từ đó: (a + b) = 2 × S/h = 2 × 47,25/6,3 = 15m. Trung bình cộng hai đáy = 15/2 = 7,5m."
+            question: "Một hình thang có diện tích bằng 47,25 m² và chiều cao bằng 6,3 m. Trung bình cộng độ dài hai đáy là:",
+            options: ["3,75 m", "7,5 m", "10,15 m", "15 m"],
+            answer: "7,5 m",
+            explanation: "Diện tích hình thang = (a + b) × h : 2, trong đó (a + b) là tổng độ dài hai đáy và h là chiều cao. Từ đó: (a + b) = 2 × S : h = 2 × 47,25 : 6,3 = 15 m. Trung bình cộng hai đáy = 15 : 2 = 7,5 m."
         },
         {
-            question: "Một bánh xe đạp có bán kính 25cm lăn được một quãng đường dài 213,52m. Hỏi bánh xe đó lăn được bao nhiêu vòng?",
+            question: "Một bánh xe đạp có bán kính 25 cm lăn được một quãng đường dài 213,52 m. Hỏi bánh xe đó lăn được bao nhiêu vòng?",
             options: ["136 vòng", "100 vòng", "135 vòng", "130 vòng"],
             answer: "136 vòng",
-            explanation: "Chu vi bánh xe = 2πr = 2 × 3,14 × 25 = 157cm = 1,57m. Số vòng = 213,52/1,57 = 136 vòng."
+            explanation: "Chu vi bánh xe = 2π × r = 2 × 3,14 × 25 = 157 cm = 1,57 m. Số vòng = 213,52 : 1,57 = 136 vòng."
         },
         {
-            question: "Một miếng đất hình chữ nhật có diện tích 800 m2 chiều dài 40m, người ta đào một cái ao hình bán nguyệt. Tính diện tích mặt ao.",
-            options: ["6,28 m2", "628 m2", "157 m2", "15,7 m2"],
-            answer: "157 m2",
-            explanation: "Chiều rộng miếng đất = 800/40 = 20m. Diện tích bán nguyệt với đường kính 20m là: (π × 20²)/2 = 157 m²."
+            question: "Một miếng đất hình chữ nhật có diện tích 800 m² chiều dài 40 m, người ta đào một cái ao hình bán nguyệt. Tính diện tích mặt ao.",
+            options: ["6,28 m²", "628 m²", "157 m²", "15,7 m²"],
+            answer: "157 m²",
+            explanation: "Chiều rộng miếng đất = 800 : 40 = 20 m. Diện tích bán nguyệt với đường kính 20 m là: (π × 20²) : 2 = 157 m²."
         },
         {
-            question: "Một hình vuông có diện tích là 1m2 69dm2. Chu vi hình vuông là:",
-            options: ["26dm", "52dm", "48dm", "44dm"],
-            answer: "52dm",
-            explanation: "Diện tích = 1m² + 69dm² = 100dm² + 69dm² = 169dm². Cạnh hình vuông = √169 = 13dm. Chu vi = 4 × 13 = 52dm."
+            question: "Một hình vuông có diện tích là 1 m² 69 dm². Chu vi hình vuông là:",
+            options: ["26 dm", "52 dm", "48 dm", "44 dm"],
+            answer: "52 dm",
+            explanation: "Diện tích = 1 m² + 69 dm² = 100 dm² + 69 dm² = 169 dm². Cạnh hình vuông = √169 = 13 dm. Chu vi = 4 × 13 = 52 dm."
         },
         {
-            question: "Cô Hoàn mua 5kg gạo tẻ và 5kg gạo nếp. 1kg gạo tẻ giá là 9300 đồng, 1kg gạo nếp giá là 11200 đồng. Cô Hoàn phải trả số tiền là:",
-            options: ["103 000 đồng", "102 000 đồng", "65 300 đồng", "57 700 đồng"],
-            answer: "103 000 đồng",
-            explanation: "Tiền gạo tẻ = 5 × 9300 = 46500 đồng. Tiền gạo nếp = 5 × 11200 = 56000 đồng. Tổng tiền = 46500 + 56000 = 102500 đồng ≈ 103000 đồng."
+            question: "Cô Hoàn mua 5 kg gạo tẻ và 5 kg gạo nếp. 1 kg gạo tẻ giá là 9.300 đồng, 1 kg gạo nếp giá là 11.200 đồng. Cô Hoàn phải trả số tiền là:",
+            options: ["103.000 đồng", "102.000 đồng", "65.300 đồng", "57.700 đồng"],
+            answer: "103.000 đồng",
+            explanation: "Tiền gạo tẻ = 5 × 9.300 = 46.500 đồng. Tiền gạo nếp = 5 × 11.200 = 56.000 đồng. Tổng tiền = 46.500 + 56.000 = 102.500 đồng ≈ 103.000 đồng."
         }
     ];
 
