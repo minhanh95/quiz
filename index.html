@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Quiz</title>
+    <title>Bài Kiểm Tra Toán</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -31,21 +31,31 @@
             border-radius: 5px;
             cursor: pointer;
             transition: all 0.3s;
+            color: #333;
+            border: 1px solid #dee2e6;
         }
         .option:hover {
-            background-color: #f1f1f1;
+            background-color: #e9ecef;
+            color: #333;
+            border-color: #ced4da;
         }
         .option.selected {
-            background-color: #0d6efd;
-            color: white;
+            background-color: #cfe2ff;
+            color: #0d6efd;
+            border-color: #0d6efd;
+            font-weight: 500;
         }
         .option.correct {
-            background-color: #198754;
-            color: white;
+            background-color: #d1e7dd;
+            color: #0f5132;
+            border-color: #198754;
+            font-weight: 500;
         }
         .option.incorrect {
-            background-color: #dc3545;
-            color: white;
+            background-color: #f8d7da;
+            color: #842029;
+            border-color: #dc3545;
+            font-weight: 500;
         }
         .feedback {
             margin-top: 20px;
@@ -80,18 +90,18 @@
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
                 <div class="quiz-container">
-                    <h1 class="text-center mb-4">Interactive Quiz</h1>
+                    <h1 class="text-center mb-4">Bài Kiểm Tra Toán</h1>
                     <div id="intro-screen">
-                        <p class="text-center">Test your knowledge with this interactive quiz. You'll receive instant feedback on each question.</p>
+                        <p class="text-center">Hãy kiểm tra kiến thức toán học của bạn với bài kiểm tra tương tác này. Bạn sẽ nhận được phản hồi ngay lập tức cho mỗi câu hỏi.</p>
                         <div class="d-grid gap-2">
-                            <button id="start-btn" class="btn btn-primary btn-lg">Start Quiz</button>
+                            <button id="start-btn" class="btn btn-primary btn-lg">Bắt Đầu</button>
                         </div>
                     </div>
                     
                     <div id="quiz-screen" style="display: none;">
                         <div class="d-flex justify-content-between mb-3">
-                            <span id="question-count">Question 1 of 10</span>
-                            <span id="score">Score: 0</span>
+                            <span id="question-count">Câu hỏi 1 trên 10</span>
+                            <span id="score">Điểm: 0</span>
                         </div>
                         <div class="progress">
                             <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
@@ -102,16 +112,16 @@
                         </div>
                         <div id="feedback" class="feedback"></div>
                         <div class="d-grid gap-2">
-                            <button id="next-btn" class="btn btn-primary" disabled>Next Question</button>
+                            <button id="next-btn" class="btn btn-primary" disabled>Câu Tiếp Theo</button>
                         </div>
                     </div>
                     
                     <div id="results-screen" style="display: none;">
                         <div class="quiz-complete">
-                            <h2>Quiz Completed!</h2>
+                            <h2>Hoàn Thành Bài Kiểm Tra!</h2>
                             <div id="final-score" class="score-display"></div>
                             <p id="performance-comment"></p>
-                            <button id="restart-btn" class="btn btn-primary restart-btn">Restart Quiz</button>
+                            <button id="restart-btn" class="btn btn-primary restart-btn">Làm Lại</button>
                         </div>
                     </div>
                 </div>

@@ -24,64 +24,64 @@ document.addEventListener('DOMContentLoaded', function() {
     // Quiz questions
     const quizQuestions = [
         {
-            question: "What is the capital of France?",
-            options: ["London", "Berlin", "Paris", "Madrid"],
-            answer: "Paris",
-            explanation: "Paris is the capital and most populous city of France."
+            question: "Viết số thập phân gồm 13 đơn vị, 5 phần trăm:",
+            options: ["13,5", "13,05", "13,005", "1305"],
+            answer: "13,05",
+            explanation: "13 đơn vị và 5 phần trăm tương đương với 13,05."
         },
         {
-            question: "Which planet is known as the Red Planet?",
-            options: ["Venus", "Mars", "Jupiter", "Saturn"],
-            answer: "Mars",
-            explanation: "Mars is often called the 'Red Planet' because of its reddish appearance."
+            question: "Chữ số 8 trong số thập phân 49,865 có giá trị là:",
+            options: ["8/10", "8/100", "8/1000", "8"],
+            answer: "8/10",
+            explanation: "Chữ số 8 đứng ở vị trí phần mười nên có giá trị là 8/10."
         },
         {
-            question: "What is the largest mammal in the world?",
-            options: ["Elephant", "Blue Whale", "Giraffe", "Polar Bear"],
-            answer: "Blue Whale",
-            explanation: "The blue whale is the largest animal known to have ever existed."
+            question: "2 tấn 12kg = ... tấn. Số thích hợp điền vào chỗ chấm là:",
+            options: ["2,12", "2,120", "2,012", "2012"],
+            answer: "2,012",
+            explanation: "2 tấn 12kg = 2 tấn + 12/1000 tấn = 2,012 tấn."
         },
         {
-            question: "Which language is primarily used for web development?",
-            options: ["Java", "Python", "JavaScript", "C++"],
-            answer: "JavaScript",
-            explanation: "JavaScript is the programming language of the Web alongside HTML and CSS."
+            question: "Kích thước của sân bóng đá là hình chữ nhật có chiều dài 105 m và chiều rộng 68m. Em hãy tính diện tích sân bóng đó với số đo là héc-ta.",
+            options: ["7140ha", "7,14ha", "71,40ha", "0,714ha"],
+            answer: "0,714ha",
+            explanation: "Diện tích = 105m × 68m = 7140m². 1ha = 10000m² nên 7140m² = 0,714ha."
         },
         {
-            question: "What is the chemical symbol for gold?",
-            options: ["Go", "Gd", "Au", "Ag"],
-            answer: "Au",
-            explanation: "The symbol Au comes from the Latin word for gold, 'aurum'."
+            question: "Giá trị của biểu thức 4,59 + 34 : 2 là:",
+            options: ["21,59", "25,19", "2,159", "15,29"],
+            answer: "21,59",
+            explanation: "4,59 + 34 : 2 = 4,59 + 17 = 21,59."
         },
         {
-            question: "Who painted the Mona Lisa?",
-            options: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Michelangelo"],
-            answer: "Leonardo da Vinci",
-            explanation: "The Mona Lisa was painted by Leonardo da Vinci in the early 16th century."
+            question: "Một hình thang có diện tích bằng 47,25m2 và chiều cao bằng 6,3m. Trung bình cộng độ dài hai đáy là:",
+            options: ["3,75m", "7,5m", "10,15m", "15m"],
+            answer: "7,5m",
+            explanation: "Diện tích hình thang = (a + b) × h/2, trong đó (a + b) là tổng độ dài hai đáy và h là chiều cao. Từ đó: (a + b) = 2 × S/h = 2 × 47,25/6,3 = 15m. Trung bình cộng hai đáy = 15/2 = 7,5m."
         },
         {
-            question: "What is the largest ocean on Earth?",
-            options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-            answer: "Pacific Ocean",
-            explanation: "The Pacific Ocean is the largest and deepest of Earth's oceanic divisions."
+            question: "Một bánh xe đạp có bán kính 25cm lăn được một quãng đường dài 213,52m. Hỏi bánh xe đó lăn được bao nhiêu vòng?",
+            options: ["136 vòng", "100 vòng", "135 vòng", "130 vòng"],
+            answer: "136 vòng",
+            explanation: "Chu vi bánh xe = 2πr = 2 × 3,14 × 25 = 157cm = 1,57m. Số vòng = 213,52/1,57 = 136 vòng."
         },
         {
-            question: "Which country is home to the kangaroo?",
-            options: ["New Zealand", "South Africa", "Australia", "Brazil"],
-            answer: "Australia",
-            explanation: "Kangaroos are marsupials native to Australia."
+            question: "Một miếng đất hình chữ nhật có diện tích 800 m2 chiều dài 40m, người ta đào một cái ao hình bán nguyệt. Tính diện tích mặt ao.",
+            options: ["6,28 m2", "628 m2", "157 m2", "15,7 m2"],
+            answer: "157 m2",
+            explanation: "Chiều rộng miếng đất = 800/40 = 20m. Diện tích bán nguyệt với đường kính 20m là: (π × 20²)/2 = 157 m²."
         },
         {
-            question: "What is the main component of the Sun?",
-            options: ["Liquid lava", "Hydrogen", "Oxygen", "Carbon"],
-            answer: "Hydrogen",
-            explanation: "The Sun is composed primarily of hydrogen (about 70%) and helium (about 28%)."
+            question: "Một hình vuông có diện tích là 1m2 69dm2. Chu vi hình vuông là:",
+            options: ["26dm", "52dm", "48dm", "44dm"],
+            answer: "52dm",
+            explanation: "Diện tích = 1m² + 69dm² = 100dm² + 69dm² = 169dm². Cạnh hình vuông = √169 = 13dm. Chu vi = 4 × 13 = 52dm."
         },
         {
-            question: "Which year did World War II end?",
-            options: ["1943", "1945", "1947", "1950"],
-            answer: "1945",
-            explanation: "World War II ended in 1945 with the surrender of Germany and Japan."
+            question: "Cô Hoàn mua 5kg gạo tẻ và 5kg gạo nếp. 1kg gạo tẻ giá là 9300 đồng, 1kg gạo nếp giá là 11200 đồng. Cô Hoàn phải trả số tiền là:",
+            options: ["103 000 đồng", "102 000 đồng", "65 300 đồng", "57 700 đồng"],
+            answer: "103 000 đồng",
+            explanation: "Tiền gạo tẻ = 5 × 9300 = 46500 đồng. Tiền gạo nếp = 5 × 11200 = 56000 đồng. Tổng tiền = 46500 + 56000 = 102500 đồng ≈ 103000 đồng."
         }
     ];
 
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const questionNo = currentQuestionIndex + 1;
         const totalQuestions = questions.length;
 
-        questionCountElement.textContent = `Question ${questionNo} of ${totalQuestions}`;
+        questionCountElement.textContent = `Câu hỏi ${questionNo} trên ${totalQuestions}`;
         progressBar.style.width = `${(questionNo / totalQuestions) * 100}%`;
         questionElement.textContent = currentQuestion.question;
 
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.classList.add('correct');
             score++;
             updateScore();
-            feedbackElement.textContent = "Correct! " + currentQuestion.explanation;
+            feedbackElement.textContent = "Đúng! " + currentQuestion.explanation;
             feedbackElement.classList.add('bg-success', 'text-white');
         } else {
             button.classList.add('incorrect');
@@ -163,7 +163,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     opt.classList.add('correct');
                 }
             });
-            feedbackElement.textContent = "Incorrect. " + currentQuestion.explanation;
+            feedbackElement.textContent = "Sai rồi. " + currentQuestion.explanation;
             feedbackElement.classList.add('bg-danger', 'text-white');
         }
 
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update the score display
     function updateScore() {
-        scoreElement.textContent = `Score: ${score}`;
+        scoreElement.textContent = `Điểm: ${score}`;
     }
 
     // Show the final results
@@ -182,18 +182,18 @@ document.addEventListener('DOMContentLoaded', function() {
         resultsScreen.style.display = 'block';
         
         const percentage = Math.round((score / questions.length) * 100);
-        finalScoreElement.textContent = `Your Score: ${score}/${questions.length} (${percentage}%)`;
+        finalScoreElement.textContent = `Điểm của bạn: ${score}/${questions.length} (${percentage}%)`;
         
         // Add performance comment based on score
         let comment = '';
         if (percentage >= 90) {
-            comment = "Excellent work! You really know your stuff!";
+            comment = "Xuất sắc! Bạn thực sự rất giỏi!";
         } else if (percentage >= 70) {
-            comment = "Good job! You have a solid understanding.";
+            comment = "Tốt! Bạn đã có hiểu biết vững chắc.";
         } else if (percentage >= 50) {
-            comment = "Not bad! With a bit more study, you'll do even better.";
+            comment = "Không tệ! Với một chút học hỏi thêm, bạn sẽ làm tốt hơn.";
         } else {
-            comment = "Keep practicing! Review the material and try again.";
+            comment = "Cần cố gắng thêm! Hãy ôn tập lại và thử lại.";
         }
         
         performanceCommentElement.textContent = comment;
