@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             type: "multiple-choice",
-            question: "Chú Toàn lái xe giao hàng từ nhà kho A đến các điểm giao hàng B, C và D rồi quay lại nhà kho A. Biết vận tốc của xe trên đường đi là 35 km/h và tại mỗi điểm giao hàng, chú dừng lại 15 phút. Tổng thời gian đi và giao hàng của chú Toàn là bao nhiêu lâu?",
+            question: "Chú Toàn lái xe giao hàng từ nhà kho A đến  điểm giao hàng B rồi qua điểm giao hàng C , đến điểm giao hàng D rồi quay lại nhà kho A. Biết vận tốc của xe trên đường đi là 35 km/h và tại mỗi điểm giao hàng, chú dừng lại 15 phút. Biết độ dài  đoạn đường từ nhà kho A điểm giao hàng B là 4 km; độ dài đoạn đường từ điểm giao hàng B đến điểm giao hàng C là 3 km; độ dài đoạn đường từ điểm giao hàng C đến điểm giao hàng D là 4 km; độ dài từ điểm giao hàng  D về nhà kho A là 3 km.Tổng thời gian đi và giao hàng của chú Toàn là bao nhiêu lâu?",
             options: ["1 giờ 9 phút", "1 giờ 15 phút", "1 giờ 20 phút", "1 giờ 30 phút"],
             answer: ["1 giờ 9 phút"],
             explanation: "Bài giải\nThời gian chú dừng lại giao hàng ở ba điểm B,C,D là :\n15 x 3 = 45 ( phút)\nQuãng đường chú đi từ nhà kho A đến các điểm B,C và D rồi lại quay về nhà kho A là :\n4 + 3 + 4 + 3 = 14 ( km)\nThời gian chú đi 14 km là :\n14 : 35 = 0,4 ( giờ)\n0,4 giờ = 24 phút\nTổng thời gian đi và giao hàng của chú Toàn là :\n45 + 24 = 69 ( phút)\n69 phút = 1 giờ 9 phút\nĐáp số : 1 giờ 9 phút"
