@@ -315,7 +315,8 @@ document.addEventListener('DOMContentLoaded', function() {
         button.classList.add('selected');
 
         // Check if answer is correct
-        const isCorrect = option === currentQuestion.answer;
+        const isCorrect = option === currentQuestion.answer[0];
+
         if (isCorrect) {
             button.classList.add('correct');
             score++;
@@ -326,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.classList.add('incorrect');
             // Highlight the correct answer
             options.forEach(opt => {
-                if (opt.textContent === currentQuestion.answer) {
+                if (opt.textContent === currentQuestion.answer[0]) {
                     opt.classList.add('correct');
                 }
             });
