@@ -1,0 +1,152 @@
+[
+  {
+    "question": "Một chú báo chạy được 1980 m trong 1 phút. Vận tốc của chú báo đó là:",
+    "type": "multiple-choice",
+    "answer": 3,
+    "order": 1,
+    "explanation": "1 phút = 60 giây. Vận tốc của chú báo đó là: \\( 1980 \\div 60 = 33 \\) m/s.",
+    "options": ["1980 m/s", "1980 m/phút", "33 m/phút", "33 m/s"]
+  },
+  {
+    "question": "Một chú cá ngừ vây vàng bơi được 40,2 km trong nửa giờ. Vận tốc của chú cá là:",
+    "type": "multiple-choice",
+    "answer": 1,
+    "order": 2,
+    "explanation": "Nửa giờ = 0,5 giờ. Vận tốc của chú cá là: \\( 40,2 \\div 0,5 = 80,4 \\) km/h.",
+    "options": ["20,1 km/giờ", "80,4 km/giờ", "20,1 km/phút", "80,4 km/phút"]
+  },
+  {
+    "question": "Một chiếc máy bay bay với vận tốc 734,5 km/h. Quãng đường bay được của chiếc máy bay đó trong 4 giờ là:",
+    "type": "multiple-choice",
+    "answer": 2,
+    "order": 3,
+    "explanation": "Quãng đường bay được của chiếc máy bay đó trong 4 giờ là: \\( 734,5 \\times 4 = 2938 \\) km.",
+    "options": ["2938 m", "29380 km", "2938 km", "293,8 km"]
+  },
+  {
+    "question": "Cô Vy đạp xe trở lại nông trường cách nhà 38 km. Cô ấy đạp xe với vận tốc là 19km/h. Vậy thời gian đạp xe của cô Vy là mấy giờ?",
+    "type": "multiple-choice",
+    "answer": 1,
+    "order": 4,
+    "explanation": "Thời gian đạp xe của cô Vy là: \\( 38 \\div 19 = 2 \\) giờ.",
+    "options": ["3 giờ", "2 giờ", "1 giờ", "4 giờ"]
+  },
+  {
+    "question": "Một chiếc trực thăng bay từ thành phố C đến thành phố D với vận tốc 300km/h. Sau đó chiếc trực thăng bay từ thành phố D trở về thành phố C với vận tốc 250 km/h. Biết thành phố D cách thành phố C là 600 km. Thời gian bay về dài hơn thời gian bay đi là:",
+    "type": "multiple-choice",
+    "answer": 2,
+    "order": 5,
+    "explanation": "Thời gian trực thăng bay từ thành phố C đến thành phố D là: \\( 600 \\div 300 = 2 \\) giờ. Thời gian trực thăng bay từ thành phố D về thành phố C là: \\( 600 \\div 250 = 2,4 \\) giờ. Thời gian bay về dài hơn thời gian bay đi là: \\( 2,4 - 2 = 0,4 \\) giờ.",
+    "options": ["1 giờ", "0,5 giờ", "0,4 giờ", "0,2 giờ"]
+  },
+  {
+    "question": "Đoàn lạc đà của Sinbad (Sin-bát) chở hàng từ thị trấn A đến thị trấn B hết 10 giờ 15 phút. Biết đoàn lạc đà đi với vận tốc 4km/h. Quãng đường từ thị trấn A đến thị trấn B là bao nhiêu?",
+    "type": "multiple-choice",
+    "answer": 0,
+    "order": 6,
+    "explanation": "Đổi: 10 giờ 15 phút = 10,25 giờ. Quãng đường từ thị trấn A đến thị trấn B dài số km là: \\( 4 \\times 10,25 = 41 \\) km.",
+    "options": ["41 km", "410 km", "45 km", "450 km"]
+  },
+  {
+    "question": "Kỵ sĩ cưỡi ngựa chạy quanh một quả đồi 3 vòng hết 9,6 phút. Vậy với cùng vận tốc như thế, nếu kỵ sĩ chạy 12 vòng quanh quả đồi thì hết bao nhiêu thời gian?",
+    "type": "multiple-choice",
+    "answer": 1,
+    "order": 7,
+    "explanation": "Kị sĩ cưỡi ngựa chạy 1 vòng quanh quả đồi hết số thời gian là: \\( 9,6 \\div 3 = 3,2 \\) phút. Kị sĩ chạy 12 vòng quanh quả đồi hết số thời gian là: \\( 3,2 \\times 12 = 38,4 \\) phút.",
+    "options": ["34,8 phút", "38,4 phút", "384 phút", "348 phút"]
+  },
+  {
+    "question": "Chú Toàn lái xe giao hàng từ nhà kho A đến các điểm giao hàng B, C và D rồi quay lại nhà kho A. Biết vận tốc của xe trên đường đi là 35 km/h và tại mỗi điểm giao hàng, chú dừng lại 15 phút. Tổng thời gian đi và giao hàng của chú Toàn là bao nhiêu lâu?",
+    "type": "multiple-choice",
+    "answer": 0,
+    "order": 8,
+    "explanation": "Thời gian chú dừng lại giao hàng ở ba điểm B,C,D là: \\( 15 \\times 3 = 45 \\) phút. Quãng đường chú đi từ nhà kho A đến các điểm B,C và D rồi lại quay về nhà kho A là: \\( 4 + 3 + 4 + 3 = 14 \\) km. Thời gian chú đi 14 km là: \\( 14 \\div 35 = 0,4 \\) giờ. \\( 0,4 \\) giờ = 24 phút. Tổng thời gian đi và giao hàng của chú Toàn là: \\( 45 + 24 = 69 \\) phút. \\( 69 \\) phút = 1 giờ 9 phút.",
+    "options": ["1 giờ 9 phút", "1 giờ 15 phút", "1 giờ 20 phút", "1 giờ 30 phút"]
+  },
+  {
+    "question": "Quãng đường AB dài 177km. Lúc 7 giờ, Tú đi xe máy từ A đến B. Tú đi 2 giờ đầu với vận tốc 36km/h. Đoạn đường còn lại Tú tăng vận tốc thêm 9km mỗi giờ. Hỏi Tú đến B lúc mấy giờ?",
+    "type": "multiple-choice",
+    "answer": 2,
+    "order": 9,
+    "explanation": "2 giờ đầu Tú đi được số km là: \\( 36 \\times 2 = 72 \\) km. Đoạn đường còn lại Tú đi với vận tốc là: \\( 36 + 9 = 45 \\) km/h. Đoạn đường Tú đi với vận tốc 45 km/h dài số km là: \\( 177 - 72 = 105 \\) km. Tú đi 105 km đường còn lại với vận tốc 45 km/h thì hết số thời gian là: \\( 105 \\div 45 = 2 \\frac{1}{3} \\) giờ. \\( 2 \\frac{1}{3} \\) giờ = 2 giờ 20 phút. Thời điểm Tú đến B là: \\( 7 \\text{giờ} + 2 \\text{giờ} + 2 \\text{giờ} 20 \\text{phút} = 11 \\text{giờ} 20 \\text{phút} \\).",
+    "options": ["4 giờ 20 phút", "9 giờ 20 phút", "11 giờ 20 phút", "12 giờ 40 phút"]
+  },
+  {
+    "question": "Quãng đường AB dài 103km. Lúc 8 giờ 15 phút, một ô tô đi từ A đến B với vận tốc 50km/h. Đi được 40km, xe hỏng sửa mất 45 phút. Quãng đường còn lại, xe chỉ chạy với vận tốc 45km/h. Hỏi xe đến B lúc mấy giờ?",
+    "type": "multiple-choice",
+    "answer": 3,
+    "order": 10,
+    "explanation": "40 km đầu tiên ô tô đi hết số giờ là: \\( 40 \\div 50 = 0,8 \\) giờ. \\( 0,8 \\) giờ = 48 phút. Quãng đường còn lại dài là: \\( 103 - 40 = 63 \\) km. Thời gian ô tô chạy quãng đường còn lại là: \\( 63 \\div 45 = 1,4 \\) giờ. \\( 1,4 \\) giờ = 1 giờ 24 phút. Xe đến B lúc: \\( 8 \\text{giờ} 15 \\text{phút} + 48 \\text{phút} + 45 \\text{phút} + 1 \\text{giờ} 24 \\text{phút} = 11 \\text{giờ} 12 \\text{phút} \\).",
+    "options": ["9 giờ 39 phút", "10 giờ 22 phút", "10 giờ 37 phút", "11 giờ 12 phút"]
+  },
+  {
+    "question": "Lúc 7 giờ 45 phút, một ô tô đi từ tỉnh A và đến tỉnh B lúc 10 giờ. Quãng đường AB là 120 km. Tính vận tốc của ô tô, biết rằng trên đường đi, ô tô nghỉ dọc đường hết 15 phút.",
+    "type": "fill-in-blank",
+    "answer": "60 km/h",
+    "order": 11,
+    "explanation": "Thời gian ô tô đi từ tỉnh A đến tỉnh B (kể cả thời gian ô tô nghỉ) là: \\( 10 \\text{giờ} - 7 \\text{giờ} 45 \\text{phút} = 2 \\text{giờ} 15 \\text{phút} \\). Thời gian ô tô đi từ tỉnh A đến tỉnh B (không kể thời gian nghỉ) là: \\( 2 \\text{giờ} 15 \\text{phút} - 15 \\text{phút} = 2 \\text{giờ} \\). Vận tốc của ô tô là: \\( 120 \\div 2 = 60 \\) km/h."
+  },
+  {
+    "question": "Lúc 5 giờ sáng, bác Phi bắt đầu lái một chiếc bè đầy tre ngược sông Đà để về nhà. Bác ấy về đến nhà đúng lúc 12 giờ trưa. Hỏi quãng đường về nhà là bao nhiêu ki-lô-mét, biết rằng bác Phi lái bè với vận tốc trung bình là 9 km/h?",
+    "type": "fill-in-blank",
+    "answer": "63 km",
+    "order": 12,
+    "explanation": "Thời gian bác Phi lái chiếc bè về nhà là: \\( 12 \\text{giờ} - 5 \\text{giờ} = 7 \\text{giờ} \\). Quãng đường về nhà bác Phi dài số km là: \\( 9 \\times 7 = 63 \\) km."
+  },
+  {
+    "question": "Biết trong 3 giờ xe màu xanh đi được 162km, trong 14 giây xe màu đỏ đi được 224m. Trong 3 phút xe màu vàng đi được 2 520m. Xe có vận tốc lớn nhất là xe nào?",
+    "type": "fill-in-blank",
+    "answer": "xe màu đỏ",
+    "order": 13,
+    "explanation": "1 giờ = 3600 giây; 1 phút = 60 giây. Vận tốc xe màu xanh (tính theo đơn vị km/h) là: \\( 162 \\div 3 = 54 \\) km/h. \\( 54 \\text{km} = 54 000 \\text{m} \\). Vận tốc xe màu xanh (tính theo đơn vị m/giây) là: \\( 54 000 \\div 3600 = 15 \\) m/s. Vận tốc xe màu đỏ (tính theo đơn vị m/giây) là: \\( 224 \\div 14 = 16 \\) m/s. 1 phút xe màu vàng đi được là: \\( 2520 \\div 3 = 840 \\) m. Vận tốc xe màu vàng là: \\( 840 \\div 60 = 14 \\) m/s. So sánh: \\( 14 < 15 < 16 \\) => \\( 14 \\text{m/s} < 15 \\text{m/s} < 16 \\text{m/s} \\). Vậy vận tốc xe màu vàng < vận tốc xe màu xanh < vận tốc xe màu đỏ => Vận tốc lớn nhất là vận tốc xe màu đỏ."
+  },
+  {
+    "question": "Xe máy khởi hành từ A lúc 5 giờ 45 phút và đi đến B lúc 7 giờ với vận tốc 40km/giờ. Tính quãng đường AB.",
+    "type": "fill-in-blank",
+    "answer": "50 km",
+    "order": 14,
+    "explanation": "Xe máy đi từ A đến B hết số thời gian là: \\( 7 \\text{giờ} - 5 \\text{giờ} 45 \\text{phút} = 1 \\text{giờ} 15 \\text{phút} \\). \\( 1 \\text{giờ} 15 \\text{phút} = 1,25 \\text{giờ} \\). Độ dài quãng đường AB là: \\( 40 \\times 1,25 = 50 \\) km."
+  },
+  {
+    "question": "Lúc 7 giờ 20 phút, một người đi xe đạp với vận tốc 12km/giờ đi từ A đến B. Biết quãng đường AB dài 18km. Hỏi người ấy đến B lúc mấy giờ?",
+    "type": "fill-in-blank",
+    "answer": "8 giờ 50 phút",
+    "order": 15,
+    "explanation": "Thời gian người đi xe đạp đi hết quãng đường AB là: \\( 18 \\div 12 = 1,5 \\) giờ. \\( 1,5 \\) giờ = 1 giờ 30 phút. Người đó đến B lúc: \\( 7 \\text{giờ} 20 \\text{phút} + 1 \\text{giờ} 30 \\text{phút} = 8 \\text{giờ} 50 \\text{phút} \\)."
+  },
+  {
+    "question": "Một ôtô khởi hành từ A lúc 7 giờ, đến B lúc 11 giờ 45 phút. Giữa đường xe nghỉ 30 phút. Tính vận tốc của ô tô biết quãng đường AB dài 170km.",
+    "type": "fill-in-blank",
+    "answer": "40 km/h",
+    "order": 16,
+    "explanation": "Thời gian ô tô đi từ A đến B (kể cả thời gian nghỉ) là: \\( 11 \\text{giờ} 45 \\text{phút} - 7 \\text{giờ} = 4 \\text{giờ} 45 \\text{phút} \\). Thời gian ô tô đi từ A đến B (không kể thời gian nghỉ) là: \\( 4 \\text{giờ} 45 \\text{phút} - 30 \\text{phút} = 4 \\text{giờ} 15 \\text{phút} \\). \\( 4 \\text{giờ} 15 \\text{phút} = 4,25 \\text{giờ} \\). Vận tốc của ô tô là: \\( 170 \\div 4,25 = 40 \\) km/h."
+  },
+  {
+    "question": "Hai bạn An và Bình cùng đạp xe từ trường đến sân vận động để tham gia thi đấu thể thao. Thời gian An đạp xe từ trường đến sân vận động bằng 5/4 thời gian Bình đạp xe từ trường đến sân vận động. Trong 6 phút bạn An đạp xe được quãng đường dài 1,2 km. Tính độ dài quãng đường từ trường đến sân vận động biết rằng nếu trên cùng quãng đường đó và cùng một lúc An xuất phát từ trường còn Bình xuất phát từ sân vận động thì sau 12 phút 2 bạn sẽ gặp nhau. (Biết vận tốc của 2 bạn không thay đổi)",
+    "type": "fill-in-blank",
+    "answer": "5,4 km",
+    "order": 17,
+    "explanation": "Thời gian An đạp xe từ trường đến sân vận động bằng \\( \\frac{5}{4} \\) thời gian Bình đạp xe từ trường đến sân vận động. => Vận tốc An đạp xe từ trường đến sân vận động = \\( \\frac{4}{5} \\) vận tốc Bình đạp xe từ trường đến sân vận động. (Trong cùng một quãng đường, vận tốc và thời gian là 2 đại lượng tỉ lệ nghịch). Vận tốc An đạp xe từ trường đến sân vận động là: \\( 1,2 \\div 6 = 0,2 \\) km/phút. Vận tốc Bình đạp xe từ trường đến sân vận động là: \\( 0,2 \\div 4 \\times 5 = 0,25 \\) km/phút. 12 phút An đạp xe được số Km là: \\( 0,2 \\times 12 = 2,4 \\) km. 12 phút Bình đạp xe được số km là: \\( 0,25 \\times 12 = 3 \\) km. Độ dài quãng đường từ trường đến sân vận động là: \\( 2,4 + 3 = 5,4 \\) km."
+  },
+  {
+    "question": "Anh Nam đi công tác ở trung tâm Hải Phòng bằng xe máy, anh khởi hành lúc 11 giờ 15 phút với vận tốc 36km/h. Anh đến nơi lúc 15 giờ 45 phút. Trên đường đi anh dừng lại nghỉ hết 1 giờ 10 phút. Hỏi từ nhà anh đến trung tâm Hải Phòng cách bao nhiêu ki-lô-mét?",
+    "type": "fill-in-blank",
+    "answer": "120 km",
+    "order": 18,
+    "explanation": "Thời gian anh Nam đi từ nhà đến trung tâm Hải Phòng (kể cả thời gian nghỉ) là: \\( 15 \\text{giờ} 45 \\text{phút} - 11 \\text{giờ} 15 \\text{phút} = 4 \\text{giờ} 30 \\text{phút} \\). Thời gian anh Nam đi từ nhà đến trung tâm Hải Phòng (không kể thời gian nghỉ) là: \\( 4 \\text{giờ} 30 \\text{phút} - 1 \\text{giờ} 10 \\text{phút} = 3 \\text{giờ} 20 \\text{phút} \\). \\( 3 \\text{giờ} 20 \\text{phút} = 3 \\frac{1}{3} \\text{giờ} = \\frac{10}{3} \\text{giờ} \\). Nhà anh Nam cách trung tâm Hải Phòng số km là: \\( 36 \\times \\frac{10}{3} = 120 \\) km."
+  },
+  {
+    "question": "Một người đi bộ từ A với vận tốc 4,5km/giờ và đến B lúc 11 giờ 30 phút. Biết quãng đường AB dài 14,4km. Hỏi người đó đi từ A lúc mấy giờ, biết dọc đường người đó dừng lại mất 30 phút?",
+    "type": "fill-in-blank",
+    "answer": "7 giờ 58 phút",
+    "order": 19,
+    "explanation": "Thời gian người đó đi từ A đến B (không kể thời gian nghỉ) là: \\( 14,4 \\div 4,5 = 3,2 \\) giờ. \\( 3,2 \\) giờ = 3 giờ 12 phút. Thời gian người đó đi từ A đến B (kể cả thời gian nghỉ) là: \\( 3 \\text{giờ} 12 \\text{phút} + 30 \\text{phút} = 3 \\text{giờ} 42 \\text{phút} \\). Thời điểm người đó đi từ A là: \\( 11 \\text{giờ} 30 \\text{phút} - 3 \\text{giờ} 42 \\text{phút} = 7 \\text{giờ} 58 \\text{phút} \\)."
+  },
+  {
+    "question": "Trên quãng đường AB, một xe máy đi với vận tốc 44km/h thì mất 2 giờ 30 phút. Một ô tô đi với vận tốc gấp rưỡi xe máy thì mất bao lâu?",
+    "type": "fill-in-blank",
+    "answer": "1 giờ 40 phút",
+    "order": 20,
+    "explanation": "2 giờ 30 phút = 2,5 giờ. Gấp rưỡi là gấp 1,5. Độ dài quãng đường AB là: \\( 44 \\times 2,5 = 110 \\) km. Vận tốc ô tô là: \\( 44 \\times 1,5 = 66 \\) km/h. Thời gian ô tô đi hết quãng đường AB là: \\( 110 \\div 66 = 1 \\frac{44}{66} \\) giờ = \\( 1 \\frac{2}{3} \\) giờ. \\( 1 \\frac{2}{3} \\) giờ = 1 giờ 40 phút."
+  }
+]

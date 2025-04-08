@@ -23,8 +23,64 @@ document.addEventListener('DOMContentLoaded', function() {
     let selectedOption = null;
     let timeLeft = 600; // 10 phút = 600 giây
     let timerInterval;
+    let isLoading = false;
 
-    // Quiz questions
+    // Hàm chuyển đổi từ \frac{a}{b} sang HTML để hiển thị
+    function renderLatex(text) {
+        if (!text) return text;
+        
+        // Đảm bảo các biểu thức LaTeX đã được bao quanh bởi \( và \)
+        // Tìm các biểu thức LaTeX chưa được bao quanh
+        text = text.replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '\\(\\frac{$1}{$2}\\)');
+        return text;
+    }
+
+    // Hàm tải câu hỏi từ Firebase
+    async function loadQuestionsFromFirebase() {
+        try {
+            isLoading = true;
+            startBtn.disabled = true;
+            startBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Đang tải...';
+            
+            const querySnapshot = await db.collection("questions").get();
+            const loadedQuestions = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+            
+            if (loadedQuestions.length === 0) {
+                // Nếu không có câu hỏi trong Firestore, sử dụng câu hỏi mẫu và lưu vào Firebase
+                await seedQuestionsToFirebase();
+                return await loadQuestionsFromFirebase();
+            }
+            
+            return loadedQuestions;
+        } catch (error) {
+            console.error("Lỗi khi tải câu hỏi từ Firebase:", error);
+            alert("Có lỗi khi tải câu hỏi. Vui lòng thử lại sau!");
+            return [];
+        } finally {
+            isLoading = false;
+            startBtn.disabled = false;
+            startBtn.innerHTML = 'Bắt Đầu';
+        }
+    }
+
+    // Hàm tạo dữ liệu mẫu cho Firebase (chỉ chạy khi chưa có dữ liệu)
+    async function seedQuestionsToFirebase() {
+        try {
+            const batch = db.batch();
+            
+            quizQuestions.forEach((question) => {
+                const docRef = db.collection("questions").doc();
+                batch.set(docRef, question);
+            });
+            
+            await batch.commit();
+            console.log("Đã thêm câu hỏi mẫu vào Firebase!");
+        } catch (error) {
+            console.error("Lỗi khi thêm câu hỏi mẫu vào Firebase:", error);
+        }
+    }
+
+    // Quiz questions mẫu (sẽ được sử dụng nếu Firestore chưa có dữ liệu)
     const quizQuestions = [
         {
             type: "multiple-choice",
@@ -159,13 +215,17 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     // Initialize the quiz
-    function initQuiz() {
+    async function initQuiz() {
+        // Tải câu hỏi từ Firebase
+        const loadedQuestions = await loadQuestionsFromFirebase();
+        
         // Shuffle questions for variety
-        questions = [...quizQuestions].sort(() => Math.random() - 0.5);
+        questions = [...loadedQuestions].sort(() => Math.random() - 0.5);
         currentQuestionIndex = 0;
         score = 0;
         updateScore();
         showQuestion();
+        
         // Khởi động đồng hồ đếm ngược
         timeLeft = 600; // 10 phút
         updateTimerDisplay();
@@ -180,11 +240,14 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Thay đổi màu sắc khi gần hết thời gian
         if (timeLeft <= 60) { // 1 phút cuối
-            timerElement.classList.remove('bg-primary');
+            timerElement.classList.remove('bg-primary', 'bg-warning');
             timerElement.classList.add('bg-danger');
         } else if (timeLeft <= 120) { // 2 phút cuối
-            timerElement.classList.remove('bg-primary');
+            timerElement.classList.remove('bg-primary', 'bg-danger');
             timerElement.classList.add('bg-warning');
+        } else {
+            timerElement.classList.remove('bg-warning', 'bg-danger');
+            timerElement.classList.add('bg-primary');
         }
     }
 
@@ -217,26 +280,56 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display the current question
     function showQuestion() {
         resetState();
+        
+        if (questions.length === 0) {
+            questionElement.textContent = "Không có câu hỏi nào. Vui lòng tải lại trang!";
+            return;
+        }
+        
         const currentQuestion = questions[currentQuestionIndex];
         const questionNo = currentQuestionIndex + 1;
         const totalQuestions = questions.length;
 
         questionCountElement.textContent = `Câu hỏi ${questionNo} trên ${totalQuestions}`;
         progressBar.style.width = `${(questionNo / totalQuestions) * 100}%`;
-        questionElement.textContent = currentQuestion.question;
+        
+        // Hiển thị câu hỏi với hỗ trợ LaTeX
+        questionElement.innerHTML = renderLatex(currentQuestion.question);
+        
+        // Render MathJax cho câu hỏi
+        if (window.MathJax) {
+            MathJax.typesetPromise([questionElement]).catch((err) => {
+                console.error('Error rendering MathJax for question:', err);
+            });
+        }
 
         if (currentQuestion.type === "multiple-choice") {
-            // Shuffle options to randomize their order
-            const shuffledOptions = [...currentQuestion.options].sort(() => Math.random() - 0.5);
-
-            shuffledOptions.forEach(option => {
-                const button = document.createElement('button');
-                button.textContent = option;
-                button.classList.add('option', 'btn', 'btn-outline-primary', 'w-100', 'text-start');
-                button.addEventListener('click', () => selectOption(button, option));
-                optionsElement.appendChild(button);
-            });
-        } else if (currentQuestion.type === "fill-in-blank") {
+            // Shuffle options to randomize their order if options exist
+            if (currentQuestion.options && currentQuestion.options.length > 0) {
+                const shuffledOptions = [...currentQuestion.options].sort(() => Math.random() - 0.5);
+                
+                shuffledOptions.forEach(option => {
+                    const button = document.createElement('button');
+                    // Sử dụng innerHTML thay vì textContent để hiển thị LaTeX
+                    button.innerHTML = renderLatex(option);
+                    button.classList.add('option', 'btn', 'btn-outline-primary', 'w-100', 'text-start');
+                    button.addEventListener('click', () => selectOption(button, option));
+                    optionsElement.appendChild(button);
+                    
+                    // Render MathJax cho từng lựa chọn
+                    if (window.MathJax) {
+                        MathJax.typesetPromise([button]).catch((err) => {
+                            console.error('Error rendering MathJax for option:', err);
+                        });
+                    }
+                });
+            } else {
+                const noOptionsMessage = document.createElement('p');
+                noOptionsMessage.textContent = "Không có lựa chọn nào cho câu hỏi này.";
+                noOptionsMessage.classList.add('text-danger');
+                optionsElement.appendChild(noOptionsMessage);
+            }
+        } else {
             // Create input field for fill-in-blank questions
             const inputContainer = document.createElement('div');
             inputContainer.classList.add('mb-3', 'mt-3');
@@ -280,16 +373,23 @@ document.addEventListener('DOMContentLoaded', function() {
             input.classList.add('is-valid');
             score++;
             updateScore();
-            feedbackElement.textContent = "Đúng! " + currentQuestion.explanation;
+            feedbackElement.innerHTML = renderLatex("Đúng! " + currentQuestion.explanation);
             feedbackElement.classList.add('bg-success', 'text-white');
         } else {
             input.classList.add('is-invalid');
-            feedbackElement.textContent = `Sai rồi. Đáp án đúng là: ${currentQuestion.answer}. ${currentQuestion.explanation}`;
+            feedbackElement.innerHTML = renderLatex(`Sai rồi. Đáp án đúng là: ${currentQuestion.answer}. ${currentQuestion.explanation}`);
             feedbackElement.classList.add('bg-danger', 'text-white');
         }
 
         feedbackElement.style.display = 'block';
         nextBtn.disabled = false;
+        
+        // Render MathJax cho phần giải thích
+        if (window.MathJax) {
+            MathJax.typesetPromise([feedbackElement]).catch((err) => {
+                console.error('Error rendering MathJax for feedback:', err);
+            });
+        }
     }
 
     // Reset the question state
@@ -325,22 +425,29 @@ document.addEventListener('DOMContentLoaded', function() {
             button.classList.add('correct');
             score++;
             updateScore();
-            feedbackElement.textContent = "Đúng! " + currentQuestion.explanation;
+            feedbackElement.innerHTML = renderLatex("Đúng! " + currentQuestion.explanation);
             feedbackElement.classList.add('bg-success', 'text-white');
         } else {
             button.classList.add('incorrect');
             // Highlight the correct answer
             options.forEach(opt => {
-                if (opt.textContent === currentQuestion.answer) {
+                if (opt.innerHTML === renderLatex(currentQuestion.answer)) {
                     opt.classList.add('correct');
                 }
             });
-            feedbackElement.textContent = "Sai rồi. " + currentQuestion.explanation;
+            feedbackElement.innerHTML = renderLatex("Sai rồi. " + currentQuestion.explanation);
             feedbackElement.classList.add('bg-danger', 'text-white');
         }
 
         feedbackElement.style.display = 'block';
         nextBtn.disabled = false;
+        
+        // Render MathJax cho phần giải thích
+        if (window.MathJax) {
+            MathJax.typesetPromise([feedbackElement]).catch((err) => {
+                console.error('Error rendering MathJax for feedback:', err);
+            });
+        }
     }
 
     // Update the score display
@@ -374,10 +481,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Event listeners
-    startBtn.addEventListener('click', () => {
+    startBtn.addEventListener('click', async () => {
+        if (isLoading) return;
         introScreen.style.display = 'none';
         quizScreen.style.display = 'block';
-        initQuiz();
+        await initQuiz();
     });
 
     nextBtn.addEventListener('click', () => {
@@ -389,9 +497,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    restartBtn.addEventListener('click', () => {
+    restartBtn.addEventListener('click', async () => {
         resultsScreen.style.display = 'none';
         quizScreen.style.display = 'block';
-        initQuiz();
+        await initQuiz();
     });
 });

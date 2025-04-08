@@ -6,6 +6,24 @@
     <title>Bài Kiểm Tra Toán</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MathJax for LaTeX support -->
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']],
+                packages: {'[+]': ['mhchem']}
+            },
+            svg: {
+                fontCache: 'global'
+            },
+            startup: {
+                typeset: true
+            }
+        };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <!-- Custom CSS -->
     <style>
         body {
@@ -166,6 +184,29 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <!-- Firebase Config -->
+    <script>
+        // Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAPP1g98DUwffvvKD1OPB6zzxzqg_LnWbA",
+            authDomain: "exam-ea18a.firebaseapp.com",
+            projectId: "exam-ea18a",
+            storageBucket: "exam-ea18a.firebasestorage.app",
+            messagingSenderId: "407913699967",
+            appId: "1:407913699967:web:515d08b53bfd0455f1fd4a",
+            measurementId: "G-WLRQT2WVQB"
+        };
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    
     <!-- Custom JS -->
     <script src="quiz.js"></script>
 </body>

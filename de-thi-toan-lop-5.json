@@ -1,0 +1,210 @@
+{
+  "exam": {
+    "name": "Đề thi Toán lớp 5 - Số thập phân",
+    "grade": "5",
+    "subject": "Toán",
+    "topic": "Số thập phân"
+  },
+  "questions": [
+    {
+      "question": "Viết số thập phân gồm 13 đơn vị, 5 phần trăm:",
+      "type": "multiple-choice",
+      "options": [
+        "13,5",
+        "13,05",
+        "13,005",
+        "1305"
+      ],
+      "answer": 1,
+      "explanation": "Đáp án đúng là B. 13,05. 13 đơn vị và 5 phần trăm = 13 + 5/100 = 13,05",
+      "order": 1
+    },
+    {
+      "question": "Chữ số 8 trong số thập phân 49,865 có giá trị là:",
+      "type": "multiple-choice",
+      "options": [
+        "8/10",
+        "8/100",
+        "8/1000",
+        "8"
+      ],
+      "answer": 1,
+      "explanation": "Đáp án đúng là B. 8/100. Vị trí chữ số 8 là hàng phần trăm, nên giá trị của nó là 8/100.",
+      "order": 2
+    },
+    {
+      "question": "2 tấn 12kg = ... tấn. Số thích hợp điền vào chỗ chấm là:",
+      "type": "multiple-choice",
+      "options": [
+        "2,12",
+        "2,120",
+        "2,012",
+        "2012"
+      ],
+      "answer": 0,
+      "explanation": "Đáp án đúng là A. 2,12. 2 tấn 12kg = 2 + 12/1000 tấn = 2,012 tấn",
+      "order": 3
+    },
+    {
+      "question": "Kích thước của sân bóng đá là hình chữ nhật có chiều dài 105 m và chiều rộng 68m. Em hãy tính diện tích sân bóng đó với số đo là héc-ta.",
+      "type": "multiple-choice",
+      "options": [
+        "7140ha",
+        "7,14ha",
+        "71,40ha",
+        "0,714ha"
+      ],
+      "answer": 3,
+      "explanation": "Đáp án đúng là D. 0,714ha. Diện tích sân bóng = 105 × 68 = 7140 m². Đổi sang héc-ta: 7140 : 10000 = 0,714 ha.",
+      "order": 4
+    },
+    {
+      "question": "Giá trị của biểu thức 4,59 + 34 : 2 là:",
+      "type": "multiple-choice",
+      "options": [
+        "21,59",
+        "25,19",
+        "2,159",
+        "15,29"
+      ],
+      "answer": 0,
+      "explanation": "Đáp án đúng là A. 21,59. 4,59 + 34 : 2 = 4,59 + 17 = 21,59",
+      "order": 5
+    },
+    {
+      "question": "Một hình thang có diện tích bằng 47,25m² và chiều cao bằng 6,3m. Trung bình cộng độ dài hai đáy là:",
+      "type": "multiple-choice",
+      "options": [
+        "3,75m",
+        "7,5m",
+        "10,15m",
+        "15m"
+      ],
+      "answer": 1,
+      "explanation": "Đáp án đúng là B. 7,5m. Trung bình cộng độ dài hai đáy = S/(h) = 47,25/6,3 = 7,5m",
+      "order": 6
+    },
+    {
+      "question": "Một bánh xe đạp có bán kính 25cm lăn được một quãng đường dài 213,52m. Hỏi bánh xe đó lăn được bao nhiêu vòng?",
+      "type": "multiple-choice",
+      "options": [
+        "136 vòng",
+        "100 vòng",
+        "135 vòng",
+        "130 vòng"
+      ],
+      "answer": 0,
+      "explanation": "Đáp án đúng là A. 136 vòng. Chu vi bánh xe = 2πr = 2 × 3,14 × 25 = 157 cm = 1,57m. Số vòng = 213,52 : 1,57 = 136 vòng.",
+      "order": 7
+    },
+    {
+      "question": "Một miếng đất hình chữ nhật có diện tích 800 m² chiều dài 40m, người ta đào một cái ao hình bán nguyệt. Tính diện tích mặt ao.",
+      "type": "multiple-choice",
+      "options": [
+        "6,28 m²",
+        "628 m²",
+        "157 m²",
+        "15,7 m²"
+      ],
+      "answer": 2,
+      "explanation": "Đáp án đúng là C. 157 m². Chiều rộng miếng đất = 800 : 40 = 20m. Bán kính hình bán nguyệt = 10m. Diện tích hình bán nguyệt = (π × r²)/2 = (3,14 × 10 × 10)/2 = 157 m².",
+      "order": 8
+    },
+    {
+      "question": "Một hình vuông có diện tích là 1m² 69dm². Chu vi hình vuông là:",
+      "type": "multiple-choice",
+      "options": [
+        "26dm",
+        "52dm",
+        "48dm",
+        "44dm"
+      ],
+      "answer": 1,
+      "explanation": "Đáp án đúng là B. 52dm. Diện tích = 1m² 69dm² = 100dm² + 69dm² = 169dm². Cạnh hình vuông = √169 = 13dm. Chu vi = 4 × 13 = 52dm.",
+      "order": 9
+    },
+    {
+      "question": "Cô Hoàn mua 5kg gạo tẻ và 5kg gạo nếp. 1kg gạo tẻ giá là 9300 đồng, 1kg gạo nếp giá là 11200 đồng. Cô Hoàn phải trả số tiền là:",
+      "type": "multiple-choice",
+      "options": [
+        "103 000 đồng",
+        "102 000 đồng",
+        "65 300 đồng",
+        "57 700 đồng"
+      ],
+      "answer": 0,
+      "explanation": "Đáp án đúng là A. 103 000 đồng. Tiền mua gạo tẻ = 5 × 9300 = 46500 đồng. Tiền mua gạo nếp = 5 × 11200 = 56000 đồng. Tổng tiền = 46500 + 56000 = 102500 đồng ≈ 103000 đồng.",
+      "order": 10
+    },
+    {
+      "question": "26,05 + 36,18 = ?",
+      "type": "fill-in-blank",
+      "answer": "62,23",
+      "explanation": "Kết quả của phép tính 26,05 + 36,18 = 62,23",
+      "order": 11
+    },
+    {
+      "question": "237,5 - 109,46 = ?",
+      "type": "fill-in-blank",
+      "answer": "128,04",
+      "explanation": "Kết quả của phép tính 237,5 - 109,46 = 128,04",
+      "order": 12
+    },
+    {
+      "question": "3,8 × 4,2 = ?",
+      "type": "fill-in-blank",
+      "answer": "15,96",
+      "explanation": "Kết quả của phép tính 3,8 × 4,2 = 15,96",
+      "order": 13
+    },
+    {
+      "question": "2,7 : 1,8 = ?",
+      "type": "fill-in-blank",
+      "answer": "1,5",
+      "explanation": "Kết quả của phép tính 2,7 : 1,8 = 1,5",
+      "order": 14
+    },
+    {
+      "question": "45,82 + 52,27 - 15,82 - 12,27 = ?",
+      "type": "fill-in-blank",
+      "answer": "70",
+      "explanation": "Kết quả của phép tính 45,82 + 52,27 - 15,82 - 12,27 = 70",
+      "order": 15
+    },
+    {
+      "question": "(72,99 + 18,67) - (8,67 + 22,99) = ?",
+      "type": "fill-in-blank",
+      "answer": "60",
+      "explanation": "Kết quả của phép tính (72,99 + 18,67) - (8,67 + 22,99) = 60",
+      "order": 16
+    },
+    {
+      "question": "Thửa ruộng thứ nhất có diện tích 16 500m². Thửa ruộng thứ hai có diện tích là 19 500m². Sản lượng lúa thu hoạch được là 96 tạ trên 1ha. Hỏi cả hai thửa ruộng đó thu hoạch được bao nhiêu tấn lúa?",
+      "type": "fill-in-blank",
+      "answer": "34,56",
+      "explanation": "Tổng diện tích = 16500 + 19500 = 36000m² = 3,6ha. Tổng sản lượng = 3,6 × 96 = 345,6 tạ = 34,56 tấn.",
+      "order": 17
+    },
+    {
+      "question": "Một sân trường hình chữ nhật có chu vi 85m, chiều dài hơn chiều rộng 12,5m. Người ta xây một bồn hoa hình tròn có chu vi 28,26m, phần còn lại để làm sân chơi. Tính diện tích sân chơi.",
+      "type": "fill-in-blank",
+      "answer": "348,915",
+      "explanation": "Chu vi sân = 2(dài + rộng) = 85m, dài = rộng + 12,5m. Giải ra: rộng = 15m, dài = 27,5m. Diện tích sân = 15 × 27,5 = 412,5m². Chu vi bồn hoa = 2πr = 28,26m, r = 4,5m. Diện tích bồn hoa = πr² = 63,585m². Diện tích sân chơi = 412,5 - 63,585 = 348,915m².",
+      "order": 18
+    },
+    {
+      "question": "Một hình tam giác có đáy 20cm, chiều cao tương ứng 12cm. Một hình thang có diện tích bằng diện tích tam giác và có chiều cao bằng 10cm. Tìm tổng độ dài hai đáy hình thang.",
+      "type": "fill-in-blank",
+      "answer": "24",
+      "explanation": "Diện tích tam giác = (20 × 12)/2 = 120cm². Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao / 2 = 120cm². Suy ra: (đáy lớn + đáy bé) × 10 / 2 = 120. Vậy đáy lớn + đáy bé = 24cm.",
+      "order": 19
+    },
+    {
+      "question": "Một hình tam giác có đáy 20cm, chiều cao tương ứng 12cm. Một hình thang có diện tích bằng diện tích tam giác và có chiều cao bằng 10cm. Biết đáy lớn hơn đáy bé 4 cm. Tính độ dài đáy lớn.",
+      "type": "fill-in-blank",
+      "answer": "14",
+      "explanation": "Diện tích tam giác = (20 × 12)/2 = 120cm². Diện tích hình thang = (đáy lớn + đáy bé) × chiều cao / 2 = 120cm². Suy ra: đáy lớn + đáy bé = 24cm. Đáy lớn = đáy bé + 4cm. Giải ra: đáy lớn = 14cm, đáy bé = 10cm.",
+      "order": 20
+    }
+  ]
+} 

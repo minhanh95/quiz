@@ -1,0 +1,210 @@
+{
+  "exam": {
+    "name": "Đề số 1",
+    "grade": "5",
+    "subject": "Toán",
+    "topic": "Chuyên đề 1"
+  },
+  "questions": [
+    {
+      "question": "Viết số thập phân gồm 13 đơn vị, 5 phần trăm:",
+      "type": "multiple-choice",
+      "answer": 1,
+      "order": 1,
+      "explanation": "5 phần trăm là \\( \\dfrac{5}{100} = 0,05 \\). Tổng: \\( 13 + 0,05 = 13,05 \\).",
+      "options": [
+        "13,5",
+        "13,05",
+        "13,005",
+        "1305"
+      ]
+    },
+    {
+      "question": "Chữ số 8 trong số thập phân 49,865 có giá trị là:",
+      "type": "multiple-choice",
+      "answer": 1,
+      "order": 2,
+      "explanation": "8 ở vị trí phần trăm, giá trị là \\( \\dfrac{8}{100} \\).",
+      "options": [
+        "\\( \\dfrac{8}{10} \\).",
+        "\\( \\dfrac{8}{100} \\).",
+        "\\( \\dfrac{8}{1000} \\).",
+        "8"
+      ]
+    },
+    {
+      "question": "2 tấn 12kg = ... tấn. Số thích hợp điền vào chỗ chấm là:",
+      "type": "multiple-choice",
+      "answer": 0,
+      "order": 3,
+      "explanation": "1 tấn = 1000kg. \\( 12 \\div 1000 = 0,012 \\) tấn. Tổng: \\( 2 + 0,012 = 2,012 \\) tấn.",
+      "options": [
+        "2,012",
+        "2,120",
+        "2,12",
+        "2012"
+      ]
+    },
+    {
+      "question": "Kích thước của sân bóng đá là hình chữ nhật có chiều dài 105 m và chiều rộng 68m. Tính diện tích sân bóng đó với số đo là héc-ta.",
+      "type": "multiple-choice",
+      "answer": 3,
+      "order": 4,
+      "explanation": "Diện tích: \\( 105 \\times 68 = 7140 \\) m². 1 ha = 10000 m². Đổi: \\( 7140 \\div 10000 = 0,714 \\) ha.",
+      "options": [
+        "7140ha",
+        "7,14ha",
+        "71,40ha",
+        "0,714ha"
+      ]
+    },
+    {
+      "question": "Giá trị của biểu thức 4,59 + 34 : 2 là:",
+      "type": "multiple-choice",
+      "answer": 0,
+      "order": 5,
+      "explanation": "Tính trước: \\( 34 \\div 2 = 17 \\). Sau đó: \\( 4,59 + 17 = 21,59 \\).",
+      "options": [
+        "21,59",
+        "25,19",
+        "2,159",
+        "15,29"
+      ]
+    },
+    {
+      "question": "Một hình thang có diện tích bằng 47,25m² và chiều cao bằng 6,3m. Trung bình cộng độ dài hai đáy là:",
+      "type": "multiple-choice",
+      "answer": 1,
+      "order": 6,
+      "explanation": "Diện tích: \\( \\dfrac{(a + b) \\times 6,3}{2} = 47,25 \\). Nhân 2: \\( (a + b) \\times 6,3 = 94,5 \\). Chia: \\( a + b = 94,5 \\div 6,3 = 15 \\). Trung bình: \\( 15 \\div 2 = 7,5 \\) m.",
+      "options": [
+        "3,75m",
+        "7,5m",
+        "10,15m",
+        "15m"
+      ]
+    },
+    {
+      "question": "Một bánh xe đạp có bán kính 25cm lăn được một quãng đường dài 213,52m. Hỏi bánh xe đó lăn được bao nhiêu vòng?",
+      "type": "multiple-choice",
+      "answer": 0,
+      "order": 7,
+      "explanation": "Chu vi: \\( 2 \\times 3,14 \\times 0,25 = 1,57 \\) m. Số vòng: \\( 213,52 \\div 1,57 = 136 \\).",
+      "options": [
+        "136 vòng",
+        "100 vòng",
+        "135 vòng",
+        "130 vòng"
+      ]
+    },
+    {
+      "question": "Một miếng đất hình chữ nhật có diện tích 800 m² chiều dài 40m, người ta đào một cái ao hình bán nguyệt. Tính diện tích mặt ao.",
+      "type": "multiple-choice",
+      "answer": 2,
+      "order": 8,
+      "explanation": "Chiều rộng: \\( 800 \\div 40 = 20 \\) m. Bán kính: \\( 20 \\div 2 = 10 \\) m. Diện tích ao: \\( \\dfrac{3,14 \\times 10^2}{2} = 157 \\) m².",
+      "options": [
+        "6,28 m²",
+        "628 m²",
+        "157 m²",
+        "15,7 m²"
+      ]
+    },
+    {
+      "question": "Một hình vuông có diện tích là 1m² 69dm². Chu vi hình vuông là:",
+      "type": "multiple-choice",
+      "answer": 1,
+      "order": 9,
+      "explanation": "1m² = 100dm². Tổng: \\( 100 + 69 = 169 \\) dm². Cạnh: \\( \\sqrt{169} = 13 \\) dm. Chu vi: \\( 4 \\times 13 = 52 \\) dm.",
+      "options": [
+        "26dm",
+        "52dm",
+        "48dm",
+        "44dm"
+      ]
+    },
+    {
+      "question": "Cô Hoàn mua 5kg gạo tẻ và 5kg gạo nếp. 1kg gạo tẻ giá là 9300 đồng, 1kg gạo nếp giá là 11200 đồng. Cô Hoàn phải trả số tiền là:",
+      "type": "multiple-choice",
+      "answer": 0,
+      "order": 10,
+      "explanation": "Gạo tẻ: \\( 5 \\times 9300 = 46500 \\) đồng. Gạo nếp: \\( 5 \\times 11200 = 56000 \\) đồng. Tổng: \\( 46500 + 56000 = 102500 \\approx 103000 \\) đồng.",
+      "options": [
+        "103000 đồng",
+        "102000 đồng",
+        "65300 đồng",
+        "57700 đồng"
+      ]
+    },
+    {
+      "question": "26,05 + 36,18 = ?",
+      "type": "fill-in-blank",
+      "answer": "62,23",
+      "order": 11,
+      "explanation": "Cộng: \\( 26,05 + 36,18 = 62,23 \\)."
+    },
+    {
+      "question": "237,5 - 109,46 = ?",
+      "type": "fill-in-blank",
+      "answer": "128,04",
+      "order": 12,
+      "explanation": "Trừ: \\( 237,5 - 109,46 = 128,04 \\)."
+    },
+    {
+      "question": "3,8 × 4,2 = ?",
+      "type": "fill-in-blank",
+      "answer": "15,96",
+      "order": 13,
+      "explanation": "Nhân: \\( 3,8 \\times 4,2 = 15,96 \\)."
+    },
+    {
+      "question": "2,7 : 1,8 = ?",
+      "type": "fill-in-blank",
+      "answer": "1,5",
+      "order": 14,
+      "explanation": "Chia: \\( 2,7 \\div 1,8 = 1,5 \\)."
+    },
+    {
+      "question": "45,82 + 52,27 - 15,82 - 12,27 = ?",
+      "type": "fill-in-blank",
+      "answer": "70",
+      "order": 15,
+      "explanation": "Cộng: \\( 45,82 + 52,27 = 98,09 \\). Trừ lần lượt: \\( 98,09 - 15,82 = 82,27 \\), \\( 82,27 - 12,27 = 70 \\)."
+    },
+    {
+      "question": "(72,99 + 18,67) - (8,67 + 22,99) = ?",
+      "type": "fill-in-blank",
+      "answer": "60",
+      "order": 16,
+      "explanation": "Trong ngoặc: \\( 72,99 + 18,67 = 91,66 \\), \\( 8,67 + 22,99 = 31,66 \\). Trừ: \\( 91,66 - 31,66 = 60 \\)."
+    },
+    {
+      "question": "Thửa ruộng thứ nhất có diện tích 16 500m². Thửa ruộng thứ hai có diện tích là 19 500m². Sản lượng lúa thu hoạch được là 96 tạ trên 1ha. Hỏi cả hai thửa ruộng đó thu hoạch được bao nhiêu tấn lúa?",
+      "type": "fill-in-blank",
+      "answer": "34,56",
+      "order": 17,
+      "explanation": "Tổng diện tích: \\( 16500 + 19500 = 36000 \\) m². Đổi: \\( 36000 \\div 10000 = 3,6 \\) ha. Sản lượng: \\( 3,6 \\times 96 = 345,6 \\) tạ. Đổi: \\( 345,6 \\div 10 = 34,56 \\) tấn."
+    },
+    {
+      "question": "Một sân trường hình chữ nhật có chu vi 85m, chiều dài hơn chiều rộng 12,5m. Người ta xây một bồn hoa hình tròn có chu vi 28,26m, phần còn lại để làm sân chơi. Tính diện tích sân chơi.",
+      "type": "fill-in-blank",
+      "answer": "348,915",
+      "order": 18,
+      "explanation": "Chu vi: \\( 2(d + r) = 85 \\), \\( d + r = 42,5 \\). \\( d = r + 12,5 \\), thay: \\( r + 12,5 + r = 42,5 \\), \\( 2r = 30 \\), \\( r = 15 \\) m, \\( d = 27,5 \\) m. Diện tích sân: \\( 15 \\times 27,5 = 412,5 \\) m². Bồn hoa: \\( 2 \\times 3,14 \\times r = 28,26 \\), \\( r = 4,5 \\) m. Diện tích bồn: \\( 3,14 \\times 4,5^2 = 63,585 \\) m². Sân chơi: \\( 412,5 - 63,585 = 348,915 \\) m²."
+    },
+    {
+      "question": "Một hình tam giác có đáy 20cm, chiều cao tương ứng 12cm. Một hình thang có diện tích bằng diện tích tam giác và có chiều cao bằng 10cm. Tìm tổng độ dài hai đáy hình thang.",
+      "type": "fill-in-blank",
+      "answer": "24",
+      "order": 19,
+      "explanation": "Diện tích tam giác: \\( \\dfrac{20 \\times 12}{2} = 120 \\) cm². Hình thang: \\( \\dfrac{(a + b) \\times 10}{2} = 120 \\). Nhân 2: \\( (a + b) \\times 10 = 240 \\). Chia: \\( a + b = 240 \\div 10 = 24 \\) cm."
+    },
+    {
+      "question": "Một hình tam giác có đáy 20cm, chiều cao tương ứng 12cm. Một hình thang có diện tích bằng diện tích tam giác và có chiều cao bằng 10cm. Biết đáy lớn hơn đáy bé 4 cm. Tính độ dài đáy lớn.",
+      "type": "fill-in-blank",
+      "answer": "14",
+      "order": 20,
+      "explanation": "Diện tích tam giác: \\( \\dfrac{20 \\times 12}{2} = 120 \\) cm². Hình thang: \\( \\dfrac{(a + b) \\times 10}{2} = 120 \\), \\( a + b = 24 \\) cm. \\( a = b + 4 \\), thay: \\( b + 4 + b = 24 \\), \\( 2b + 4 = 24 \\), \\( 2b = 20 \\), \\( b = 10 \\) cm, \\( a = 14 \\) cm."
+    }
+  ]
+}
