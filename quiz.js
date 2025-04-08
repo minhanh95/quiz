@@ -314,8 +314,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         button.classList.add('selected');
 
+        // Convert both the selected option and correct answer to lowercase for comparison
+        const selectedOptionLower = option.toLowerCase();
+        const correctAnswerLower = currentQuestion.answer[0].toLowerCase();
+
         // Check if answer is correct
-        const isCorrect = option === currentQuestion.answer[0];
+        const isCorrect = selectedOptionLower === correctAnswerLower;
 
         if (isCorrect) {
             button.classList.add('correct');
@@ -327,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.classList.add('incorrect');
             // Highlight the correct answer
             options.forEach(opt => {
-                if (opt.textContent === currentQuestion.answer[0]) {
+                if (opt.textContent.toLowerCase() === correctAnswerLower) {
                     opt.classList.add('correct');
                 }
             });
@@ -356,7 +360,10 @@ document.addEventListener('DOMContentLoaded', function() {
         // Check if all answers are correct in order
         let isCorrect = true;
         for (let i = 0; i < currentQuestion.answer.length; i++) {
-            if (userAnswers[i] !== currentQuestion.answer[i]) {
+            // Convert both user answer and correct answer to lowercase and remove all spaces
+            const userAnswerLower = userAnswers[i].toLowerCase().replace(/\s+/g, '');
+            const correctAnswerLower = currentQuestion.answer[i].toLowerCase().replace(/\s+/g, '');
+            if (userAnswerLower !== correctAnswerLower) {
                 isCorrect = false;
                 break;
             }
