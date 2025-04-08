@@ -28,133 +28,142 @@ document.addEventListener('DOMContentLoaded', function() {
     const quizQuestions = [
         {
             type: "multiple-choice",
-            question: "Viết số thập phân gồm 13 đơn vị, 5 phần trăm:",
-            options: ["13,5", "13,05", "13,005", "1305"],
-            answer: "13,05",
-            explanation: "13 đơn vị và 5 phần trăm tương đương với 13,05."
+            question: "Một chú báo chạy được 1980 m trong 1 phút. Vận tốc của chú báo đó là:",
+            options: ["1980 m/s", "30 m/s", "33 m/phút", "1980 m/phút"],
+            answer: "33 m/phút",
+            explanation: "Bài giải\nVận tốc = Quãng đường / Thời gian = 1980 m / 1 phút = 1980 m/phút"
         },
         {
             type: "multiple-choice",
-            question: "Chữ số 8 trong số thập phân 49,865 có giá trị là:",
-            options: ["8/10", "8/100", "8/1000", "8"],
-            answer: "8/10",
-            explanation: "Chữ số 8 đứng ở vị trí phần mười nên có giá trị là 8/10."
+            question: "Một chú cá ngừ vây vàng bơi được 40,2 km trong nửa giờ. Vận tốc của chú cá là:",
+            options: ["20,1 km/giờ", "80,4 km/giờ", "20,1 km/phút", "80,4 km/phút"],
+            answer: "80,4 km/giờ",
+            explanation: "Bài giải\nNửa giờ = 0,5 giờ\nVận tốc của chú cá là : 40,2 : 0,5 = 80,4 ( km/h)\nĐáp số : 80,4km/h"
         },
         {
             type: "multiple-choice",
-            question: "2 tấn 12kg = ... tấn. Số thích hợp điền vào chỗ chấm là:",
-            options: ["2,12", "2,120", "2,012", "2012"],
-            answer: "2,012",
-            explanation: "2 tấn 12kg = 2 tấn + 12/1000 tấn = 2,012 tấn."
+            question: "Một chiếc máy bay bay với vận tốc 734,5 km/h. Quãng đường bay được của chiếc máy bay đó trong 4 giờ là:",
+            options: ["2938 m", "29380 km", "2938 km", "293,8 km"],
+            answer: "2938 km",
+            explanation: "Bài giải\nQuãng đường bay được của chiếc máy bay đó trong 4 giờ là :\n734,5 x 4 = 2938 ( km)\nĐáp số : 2938 km"
         },
         {
             type: "multiple-choice",
-            question: "Kích thước của sân bóng đá là hình chữ nhật có chiều dài 105 m và chiều rộng 68m. Em hãy tính diện tích sân bóng đó với số đo là héc-ta.",
-            options: ["7140 ha", "7,14 ha", "71,40 ha", "0,714 ha"],
-            answer: "0,714 ha",
-            explanation: "Diện tích = 105 m × 68 m = 7140 m². 1 ha = 10000 m² nên 7140 m² = 0,714 ha."
+            question: "Cô Vy đạp xe trở lại nông trường cách nhà 38 km. Cô ấy đạp xe với vận tốc là 19km/h. Vậy thời gian đạp xe của cô Vy là mấy giờ?",
+            options: ["3 giờ", "2 giờ", "1 giờ", "4 giờ"],
+            answer: "2 giờ",
+            explanation: "Bài giải\nThời gian đạp xe của cô Vy là :\n38 : 19 = 2 ( giờ)\nĐáp số : 2 giờ"
         },
         {
             type: "multiple-choice",
-            question: "Giá trị của biểu thức 4,59 + 34 : 2 là:",
-            options: ["21,59", "25,19", "2,159", "15,29"],
-            answer: "21,59",
-            explanation: "4,59 + 34 : 2 = 4,59 + 17 = 21,59."
+            question: "Một chiếc trực thăng bay từ thành phố C đến thành phố D với vận tốc 300km/h. Sau đó chiếc trực thăng bay từ thành phố D trở về thành phố C với vận tốc 250 km/h. Biết thành phố D cách thành phố C là 600 km. Thời gian bay về dài hơn thời gian bay đi là:",
+            options: ["1 giờ", "0,5 giờ", "0,4 giờ", "0,2 giờ"],
+            answer: "0,4 giờ",
+            explanation: "Bài giải\nThời gian trực thăng bay từ thay phố C đến thành phố D là :\n600 : 300 = 2 ( giờ )\nThời gian trực thăng bay từ thành phố D về thành phố C là :\n600 :250 = 2,4 ( giờ )\nThời gian bay về dài hơn thời gian bay đi là :\n2,4 – 2 = 0,4 ( giờ)\nĐáp số : 0,4 giờ"
         },
         {
             type: "multiple-choice",
-            question: "Một hình thang có diện tích bằng 47,25 m² và chiều cao bằng 6,3 m. Trung bình cộng độ dài hai đáy là:",
-            options: ["3,75 m", "7,5 m", "10,15 m", "15 m"],
-            answer: "7,5 m",
-            explanation: "Diện tích hình thang = (a + b) × h : 2, trong đó (a + b) là tổng độ dài hai đáy và h là chiều cao. Từ đó: (a + b) = 2 × S : h = 2 × 47,25 : 6,3 = 15 m. Trung bình cộng hai đáy = 15 : 2 = 7,5 m."
+            question: "Đoàn lạc đà của Sinbad chở hàng từ thị trấn A đến thị trấn B hết 10 giờ 15 phút. Biết đoàn lạc đà đi với vận tốc 4km/h. Quãng đường từ thị trấn A đến thị trấn B là bao nhiêu?",
+            options: ["41 km", "410 km", "45 km", "450 km"],
+            answer: "41 km",
+            explanation: "Bài giải\nĐổi : 10 giờ 15 phút = 10,25 giờ\nQuãng đường từ thị trấn A đến thị trấn B dài số km là :\n4 x 10,25 = 41( km)\nĐáp số : 41 km"
         },
         {
             type: "multiple-choice",
-            question: "Một bánh xe đạp có bán kính 25 cm lăn được một quãng đường dài 213,52 m. Hỏi bánh xe đó lăn được bao nhiêu vòng?",
-            options: ["136 vòng", "100 vòng", "135 vòng", "130 vòng"],
-            answer: "136 vòng",
-            explanation: "Chu vi bánh xe = 2π × r = 2 × 3,14 × 25 = 157 cm = 1,57 m. Số vòng = 213,52 : 1,57 = 136 vòng."
+            question: "Kỵ sĩ cưỡi ngựa chạy quanh một quả đồi 3 vòng hết 9,6 phút. Vậy với cùng vận tốc như thế, nếu kỵ sĩ chạy 12 vòng quanh quả đồi thì hết bao nhiêu thời gian?",
+            options: ["34,8 phút", "38,4 phút", "384 phút", "348 phút"],
+            answer: "38,4 phút",
+            explanation: "Bài giải\nKị sĩ cưỡi ngựa chạy 1 vòng quanh quả đồi hết số thời gian là :\n9,6 : 3 = 3,2 ( phút)\nKị sĩ chạy 12 vòng quanh quả đồi hết số thời gian là :\n3,2 x 12 = 38,4 ( phút)\nĐáp số : 38,4 phút"
         },
         {
             type: "multiple-choice",
-            question: "Một miếng đất hình chữ nhật có diện tích 800 m² chiều dài 40 m, người ta đào một cái ao hình bán nguyệt. Tính diện tích mặt ao.",
-            options: ["6,28 m²", "628 m²", "157 m²", "15,7 m²"],
-            answer: "157 m²",
-            explanation: "Chiều rộng miếng đất = 800 : 40 = 20 m. Diện tích bán nguyệt với đường kính 20 m là: (π × 20²) : 2 = 157 m²."
+            question: "Chú Toàn lái xe giao hàng từ nhà kho A đến các điểm giao hàng B, C và D rồi quay lại nhà kho A. Biết vận tốc của xe trên đường đi là 35 km/h và tại mỗi điểm giao hàng, chú dừng lại 15 phút. Tổng thời gian đi và giao hàng của chú Toàn là bao nhiêu lâu?",
+            options: ["1 giờ 9 phút", "1 giờ 15 phút", "1 giờ 20 phút", "1 giờ 30 phút"],
+            answer: "1 giờ 9 phút",
+            explanation: "Bài giải\nThời gian chú dừng lại giao hàng ở ba điểm B,C,D là :\n15 x 3 = 45 ( phút)\nQuãng đường chú đi từ nhà kho A đến các điểm B,C và D rồi lại quay về nhà kho A là :\n4 + 3 + 4 + 3 = 14 ( km)\nThời gian chú đi 14 km là :\n14 : 35 = 0,4 ( giờ)\n0,4 giờ = 24 phút\nTổng thời gian đi và giao hàng của chú Toàn là :\n45 + 24 = 69 ( phút)\n69 phút = 1 giờ 9 phút\nĐáp số : 1 giờ 9 phút"
         },
         {
             type: "multiple-choice",
-            question: "Một hình vuông có diện tích là 1 m² 69 dm². Chu vi hình vuông là:",
-            options: ["26 dm", "52 dm", "48 dm", "44 dm"],
-            answer: "52 dm",
-            explanation: "Diện tích = 1 m² + 69 dm² = 100 dm² + 69 dm² = 169 dm². Cạnh hình vuông = √169 = 13 dm. Chu vi = 4 × 13 = 52 dm."
+            question: "Quãng đường AB dài 177km. Lúc 7 giờ, Tú đi xe máy từ A đến B. Tú đi 2 giờ đầu với vận tốc 36km/h. Đoạn đường còn lại Tú tăng vận tốc thêm 9km mỗi giờ. Hỏi Tú đến B lúc mấy giờ?",
+            options: ["4 giờ 20 phút", "9 giờ 20 phút", "11 giờ 20 phút", "12 giờ 40 phút"],
+            answer: "11 giờ 20 phút",
+            explanation: "Bài giải\n2 giờ đầu Tú đi được số km là :\n36 x 2 = 72 ( km)\nĐoạn đường còn lại Tú đi với vận tốc là :\n36 + 9 = 45 ( km/h)\nĐoạn đường Tú đi với vận tốc 45 km/h dài số km là :\n177 – 72 = 105 (km)\nTú đi 105 km đường còn lại với vận tốc 45 km/h thì hết số thời gian là :\n105 : 45 = 2 1/3 (giờ )\n2 1/3 giờ = 2 giờ 20 phút\nThời điểm Tú đến B là :\n7 giờ + 2 giờ + 2 giờ 20 phút = 11 giờ 20 phút\nĐáp số : 11 giờ 20 phút"
         },
         {
             type: "multiple-choice",
-            question: "Cô Hoàn mua 5 kg gạo tẻ và 5 kg gạo nếp. 1 kg gạo tẻ giá là 9.300 đồng, 1 kg gạo nếp giá là 11.200 đồng. Cô Hoàn phải trả số tiền là:",
-            options: ["103.000 đồng", "102.000 đồng", "65.300 đồng", "57.700 đồng"],
-            answer: "103.000 đồng",
-            explanation: "Tiền gạo tẻ = 5 × 9.300 = 46.500 đồng. Tiền gạo nếp = 5 × 11.200 = 56.000 đồng. Tổng tiền = 46.500 + 56.000 = 102.500 đồng ≈ 103.000 đồng."
+            question: "Quãng đường AB dài 103km. Lúc 8 giờ 15 phút, một ô tô đi từ A đến B với vận tốc 50km/h. Đi được 40km, xe hỏng sửa mất 45 phút. Quãng đường còn lại, xe chỉ chạy với vận tốc 45km/h. Hỏi xe đến B lúc mấy giờ?",
+            options: ["9 giờ 39 phút", "10 giờ 22 phút", "10 giờ 37 phút", "11 giờ 12 phút"],
+            answer: "11 giờ 12 phút",
+            explanation: "Bài giải\n40 km đầu tiên ô tô đi hết số giờ là :\n40 : 50 = 0,8 ( giờ)\n0,8 giờ = 48 phút\nQuãng đường còn lại dài là\n103 – 40 = 63 ( km)\nThời gian ô tô chạy quãng đường còn lại là :\n63 : 45 = 1,4 ( giờ)\n1,4 giờ = 1 giờ 24 phút\nXe đến B lúc :\n8 giờ 15 phút + 48 phút + 45 phút + 1 giờ 24 phút = 9 giờ 132 phút = 11 giờ 12 phút\nĐáp số : 11 giờ 12 phút"
         },
         {
             type: "fill-in-blank",
-            question: "26,05 + 36,18 = ...",
-            answer: "62,23",
-            explanation: "26,05 + 36,18 = 62,23."
-        },
-        {
-            type: "fill-in-blank",
-            question: "237,5 - 109,46 = ...",
-            answer: "128,04",
-            explanation: "237,5 - 109,46 = 128,04."
-        },
-        {
-            type: "fill-in-blank",
-            question: "3,8 × 4,2 = ...",
-            answer: "15,96",
-            explanation: "3,8 × 4,2 = 15,96."
-        },
-        {
-            type: "fill-in-blank",
-            question: "2,7 : 1,8 = ...",
-            answer: "1,5",
-            explanation: "2,7 : 1,8 = 1,5."
-        },
-        {
-            type: "fill-in-blank",
-            question: "45,82 + 52,27 - 15,82 - 12,27 = ...",
-            answer: "70",
-            explanation: "45,82 + 52,27 - 15,82 - 12,27 = 98,09 - 28,09 = 70."
-        },
-        {
-            type: "fill-in-blank",
-            question: "(72,99 + 18,67) - (8,67 + 22,99) = ...",
+            question: "Lúc 7 giờ 45 phút, một ô tô đi từ tỉnh A và đến tỉnh B lúc 10 giờ. Quãng đường AB là 120 km. Tính vận tốc của ô tô, biết rằng trên đường đi, ô tô nghỉ dọc đường hết 15 phút.",
             answer: "60",
-            explanation: "(72,99 + 18,67) - (8,67 + 22,99) = 91,66 - 31,66 = 60."
+            unit: "km/h",
+            explanation: "Bài giải\nThời gian ô tô đi từ tỉnh A đến tỉnh B ( kể cả thời gian ô tô nghỉ ) là :\n10 giờ - 7 giờ 45 phút = 2 giờ 15 phút\nThời gian ô tô đi từ tỉnh A đến tỉnh B( không kể thời gian nghỉ ) là\n2 giờ 15 phút – 15 phút = 2 giờ\nVận tốc của ô tô là :\n120 : 2 = 60 ( km/h)\nĐáp số : 60 km/h"
         },
         {
             type: "fill-in-blank",
-            question: "Thửa ruộng thứ nhất có diện tích 16.500 m², thửa ruộng thứ hai có diện tích 19.500 m². Sản lượng lúa thu hoạch là 96 tạ trên 1 ha. Tổng sản lượng lúa thu hoạch từ hai thửa ruộng là bao nhiêu tấn?",
-            answer: "34,56",
-            explanation: "Tổng diện tích hai thửa ruộng = 16.500 + 19.500 = 36.000 m² = 3,6 ha. Sản lượng lúa = 3,6 × 96 = 345,6 tạ = 34,56 tấn."
+            question: "Lúc 5 giờ sáng, bác Phi bắt đầu lái một chiếc bè đầy tre ngược sông Đà để về nhà. Bác ấy về đến nhà đúng lúc 12 giờ trưa. Hỏi quãng đường về nhà là bao nhiêu ki-lô-mét, biết rằng bác Phi lái bè với vận tốc trung bình là 9 km/h?",
+            answer: "63",
+            unit: "km",
+            explanation: "Bài giải\nThời gian bác Phi lái chiếc bè về nhà là :\n12 giờ - 5 giờ = 7 giờ\nQuãng đường về nhà bác Phi dài số km là :\n9 x 7 = 63 ( km)\nĐáp số : 63 km"
         },
         {
             type: "fill-in-blank",
-            question: "Một sân trường hình chữ nhật có chu vi 85 m, chiều dài hơn chiều rộng 12,5 m. Người ta xây một bồn hoa hình tròn có chu vi 28,26 m, phần còn lại làm sân chơi. Diện tích sân chơi là bao nhiêu m²?",
-            answer: "348,915",
-            explanation: "Gọi chiều dài là a và chiều rộng là b. Ta có: 2a + 2b = 85 và a - b = 12,5. Giải hệ phương trình, được a = 27,5 m, b = 15 m. Diện tích sân = a × b = 27,5 × 15 = 412,5 m². Chu vi bồn hoa = 28,26 m, nên đường kính bồn hoa = 28,26 : π = 28,26 : 3,14 = 9 m. Diện tích bồn hoa = π × (9/2)² = 3,14 × 4,5² = 3,14 × 20,25 = 63,585 m². Diện tích sân chơi = 412,5 - 63,585 = 348,915 m²."
+            question: "Biết trong 3 giờ xe màu xanh đi được 162km, trong 14 giây xe màu đỏ đi được 224m. Trong 3 phút xe màu vàng đi được 2 520m. Xe có vận tốc lớn nhất là xe nào?",
+            answer: "xe màu đỏ",
+            explanation: "Bài giải\n1 giờ = 3600 giây ; 1 phút = 60 giây\nVận tốc xe màu xanh ( tính theo đơn vị km/h) là : 162 : 3 = 54 (km / h)\n54 km = 54 000 m\nVận tốc xe màu xanh ( tính theo đơn vị m/giây) là :\n54 000 : 3600 = 15 (m/s)\nVận tốc xe màu đỏ ( Tính theo đơn vị m/giây) là :\n224 : 14 = 16 ( m/s)\n1 phút xe màu vàng đi được là :\n2520 : 3 = 840(m)\nVận tốc xe màu vàng là :\n840 : 60 = 14 ( m/s)\nSo sánh : 14< 15 < 16 => 14 m/s < 15 m/s < 16 m/s\nVậy vận tốc xe màu vàng < vận tốc xe màu xanh< vận tốc xe màu đỏ\n=> Vận tốc lớn nhất là vận tốc xe màu đỏ."
         },
         {
             type: "fill-in-blank",
-            question: "Một hình tam giác có đáy 20 cm, chiều cao tương ứng 12 cm. Một hình thang có diện tích bằng diện tích tam giác và chiều cao 10 cm. Tổng độ dài hai đáy hình thang là bao nhiêu cm?",
-            answer: "24",
-            explanation: "Diện tích tam giác = (20 × 12) : 2 = 120 cm². Diện tích hình thang = (a + c) × h : 2, trong đó a và c là hai đáy, h là chiều cao. Ta có: (a + c) × 10 : 2 = 120. Suy ra: a + c = 120 × 2 : 10 = 24 cm."
+            question: "Xe máy khởi hành từ A lúc 5 giờ 45 phút và đi đến B lúc 7 giờ với vận tốc 40km/giờ. Tính quãng đường AB.",
+            answer: "50",
+            unit: "km",
+            explanation: "Bài giải\nXe máy đi từ A đến B hết số thời gian là :\n7 giờ - 5 giờ 45 phút = 1 giờ 15 phút\n1 giờ 15 phút = 1,25 giờ\nĐộ dài quãng đường AB là :\n40 x 1,25 = 50 ( km)\nĐáp số : 50 km"
         },
         {
             type: "fill-in-blank",
-            question: "Một hình tam giác có đáy 20 cm, chiều cao tương ứng 12 cm. Một hình thang có diện tích bằng diện tích tam giác và có chiều cao 10 cm. Biết đáy lớn hơn đáy bé 4 cm. Độ dài đáy lớn là bao nhiêu cm?",
-            answer: "14",
-            explanation: "Diện tích tam giác = (20 × 12) : 2 = 120 cm². Diện tích hình thang = (a + c) × h : 2, trong đó a và c là hai đáy, h là chiều cao. Ta có: (a + c) × 10 : 2 = 120. Suy ra: a + c = 120 × 2 : 10 = 24 cm. Đáy lớn hơn đáy bé 4cm, nên nếu đáy nhỏ là b thì đáy lớn là b + 4. Ta có: b + (b + 4) = 24, suy ra 2b = 20, nên b = 10 cm. Vậy đáy lớn là 10 + 4 = 14 cm."
+            question: "Lúc 7 giờ 20 phút, một người đi xe đạp với vận tốc 12km/giờ đi từ A đến B. Biết quãng đường AB dài 18km. Hỏi người ấy đến B lúc mấy giờ?",
+            answer: "8 giờ 50 phút",
+            answerType: "time",
+            explanation: "Bài giải\nThời gian người đi xe đạp đi hết quãng đường AB là :\n18 : 12 = 1, 5 giờ\n1,5 giờ = 1 giờ 30 phút\nNgười đó đến B lúc :\n7 giờ 20 phút + 1 giờ 30 phút = 8 giờ 50 phút\nĐáp số: 8 giờ 50 phút"
+        },
+        {
+            type: "fill-in-blank",
+            question: "Một ôtô khởi hành từ A lúc 7 giờ, đến B lúc 11 giờ 45 phút. Giữa đường xe nghỉ 30 phút. Tính vận tốc của ô tô biết quãng đường AB dài 170km.",
+            answer: "40",
+            unit: "km/h",
+            explanation: "Bài giải\nThời gian ô tô đi từ A đến B( kể cả thời gian nghỉ ) là :\n11 giờ 45 phút – 7 giờ = 4 giờ 45 phút\nThời gian ô tô di từ A đến B ( không kể thời gian nghỉ ) là :\n4 giờ 45 phút – 30 phút = 4 giờ 15 phút\n4 giờ 15 phút = 4,25 giờ\nVận tốc của ô tô là :\n170 : 4,25 = 40 ( km/h)\nĐáp số : 40 km/h"
+        },
+        {
+            type: "fill-in-blank",
+            question: "Anh Nam đi công tác ở trung tâm Hải Phòng bằng xe máy, anh khởi hành lúc 11 giờ 15 phút với vận tốc 36km/h. Anh đến nơi lúc 15 giờ 45 phút. Trên đường đi anh dừng lại nghỉ hết 1 giờ 10 phút. Hỏi từ nhà anh đến trung tâm Hải Phòng cách bao nhiêu ki-lô-mét?",
+            answer: "120",
+            unit: "km",
+            explanation: "Bài giải\nThời gian anh Nam đi từ nhà đến trung tâm Hải Phòng ( kể cả thời gian nghỉ ) là :\n15 giờ 45 phút – 11 giờ 15 phút = 4 giờ 30 phút\nThời gian anh Nam đi từ nhà đến trung tâm Hải Phòng ( không kể thời gian nghỉ ) là :\n4 giờ 30 phút – 1 giờ 10 phút = 3 giờ 20 phút\n3 giờ 20 phút = 3 1/3 giờ =10/3 giờ\nNhà anh Nam cách trung tâm Hải Phòng số km là :\n36 x 10/3 = 120 ( km)\nĐáp số : 120 km"
+        },
+        {
+            type: "fill-in-blank",
+            question: "Một người đi bộ từ A với vận tốc 4,5km/giờ và đến B lúc 11 giờ 30 phút. Biết quãng đường AB dài 14,4km. Hỏi người đó đi từ A lúc mấy giờ, biết dọc đường người đó dừng lại mất 30 phút?",
+            answer: "7 giờ 48 phút",
+            answerType: "time",
+            explanation: "Bài giải\nThời gian người đó đi từ A đến B ( không kể thời gian nghỉ ) là :\n14,4 : 4,5 = 3,2 giờ\n3,2 giờ = 3 giờ 12 phút\nThời gian người đó đi từ A đến B ( kể cả thời gian nghỉ ) là :\n3 giờ 12 phút + 30 phút = 3 giờ 42 phút\nThời điểm người đó đi từ A là :\n11 giờ 30 phút – 3 giờ 42 phút = 7 giờ 48 phút\nĐáp số : 7 giờ 48 phút"
+        },
+        {
+            type: "fill-in-blank",
+            question: "Trên quãng đường AB, một xe máy đi với vận tốc 44km/h thì mất 2 giờ 30 phút. Một ô tô đi với vận tốc gấp rưỡi xe máy thì mất bao lâu?",
+            answer: "1 giờ 40 phút",
+            answerType: "time",
+            explanation: "Bài giải\n2 giờ 30 phút = 2,5 giờ\nGấp rưỡi là gấp 1,5\nĐộ dài quãng đường AB là : 44 x 2,5 = 110( km)\nVận tốc ô tô là : 44 x 1,5 = 66 ( km/h)\nThời gian ô tô đi hết quãng đường AB là : 110 : 66 = 1 44/66 ( giờ ) = 1 2/3 giờ\n1 2/3 giờ = 1 giờ 40 phút\nĐáp số : 1 giờ 40 phút"
+        },
+        {
+            type: "fill-in-blank",
+            question: "Hai bạn An và Bình cùng đạp xe từ trường đến sân vận động để tham gia thi đấu thể thao. Thời gian An đạp xe từ trường đến sân vận động bằng 5/4 thời gian Bình đạp xe từ trường đến sân vận động. Trong 6 phút bạn An đạp xe được quãng đường dài 1,2 km. Tính độ dài quãng đường từ trường đến sân vận động biết rằng nếu trên cùng quãng đường đó và cùng một lúc An xuất phát từ trường còn Bình xuất phát từ sân vận động thì sau 12 phút 2 bạn sẽ gặp nhau.",
+            answer: "5,4",
+            unit: "km",
+            explanation: "Bài giải\nThời gian An đạp xe từ trường đến sân vận động bằng 5/4 thời gian Bình đạp xe từ trường đến sân vận động .\n=> Vận tốc An đạp xe từ trường đến sân vận động = 4/5 vận tốc Bình đạp xe từ trường đến sân vận động .( Trong cùng một quãng đường , vận tốc và thời gian là 2 đại lượng tỉ lệ nghịch )\nVận tốc An đạp xe từ trường đến sân vận động là : 1,2 : 6 = 0,2 ( km/phút)\nVận tốc Bình đạp xe từ trường đến sân vận động là : 0,2 : 4 x 5 = 0,25 ( km/phút)\n12 phút An đạp xe được số km là : 0,2 x 12 = 2,4 ( km)\n12 phút Bình đạp xe được số km là : 0,25 x 12 = 3 (km)\nĐộ dài quãng đường từ trường đến sân vận động là : 2,4 + 3 = 5,4 ( km)\nĐáp số : 5,4 km"
         }
     ];
 
@@ -239,68 +248,66 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (currentQuestion.type === "fill-in-blank") {
             // Create input field for fill-in-blank questions
             const inputContainer = document.createElement('div');
-            inputContainer.classList.add('mb-3', 'mt-3');
+            inputContainer.classList.add('mb-3', 'mt-3', 'd-flex', 'align-items-center', 'justify-content-center');
             
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.id = 'answer-input';
-            input.classList.add('form-control', 'mb-2');
-            input.placeholder = 'Nhập đáp án của bạn...';
+            if (currentQuestion.answerType === "time") {
+                // Create time input fields
+                const hourInput = document.createElement('input');
+                hourInput.type = 'number';
+                hourInput.id = 'hour-input';
+                hourInput.classList.add('form-control', 'mb-2', 'me-2');
+                hourInput.style.width = '80px';
+                hourInput.placeholder = 'Giờ';
+                hourInput.min = '0';
+                
+                const minuteInput = document.createElement('input');
+                minuteInput.type = 'number';
+                minuteInput.id = 'minute-input';
+                minuteInput.classList.add('form-control', 'mb-2', 'me-2');
+                minuteInput.style.width = '80px';
+                minuteInput.placeholder = 'Phút';
+                minuteInput.min = '0';
+                minuteInput.max = '59';
+                
+                const submitBtn = document.createElement('button');
+                submitBtn.textContent = 'Kiểm tra';
+                submitBtn.classList.add('btn', 'btn-primary', 'ms-2');
+                submitBtn.addEventListener('click', () => {
+                    const hour = hourInput.value.padStart(2, '0');
+                    const minute = minuteInput.value.padStart(2, '0');
+                    checkFillInAnswer(`${hour} giờ ${minute} phút`);
+                });
+                
+                inputContainer.appendChild(hourInput);
+                inputContainer.appendChild(minuteInput);
+                inputContainer.appendChild(submitBtn);
+            } else {
+                // Create regular number input
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.id = 'answer-input';
+                input.classList.add('form-control', 'mb-2', 'me-2');
+                input.style.width = '150px';
+                input.placeholder = 'Nhập đáp án...';
+                
+                const unitSpan = document.createElement('span');
+                unitSpan.textContent = currentQuestion.unit;
+                unitSpan.classList.add('ms-2');
+                
+                const submitBtn = document.createElement('button');
+                submitBtn.textContent = 'Kiểm tra';
+                submitBtn.classList.add('btn', 'btn-primary', 'ms-2');
+                submitBtn.addEventListener('click', () => checkFillInAnswer(input.value));
+                
+                inputContainer.appendChild(input);
+                inputContainer.appendChild(unitSpan);
+                inputContainer.appendChild(submitBtn);
+            }
             
-            const submitBtn = document.createElement('button');
-            submitBtn.textContent = 'Kiểm tra';
-            submitBtn.classList.add('btn', 'btn-primary', 'w-100');
-            submitBtn.addEventListener('click', () => checkFillInAnswer(input.value));
-            
-            inputContainer.appendChild(input);
-            inputContainer.appendChild(submitBtn);
             optionsElement.appendChild(inputContainer);
         }
 
         nextBtn.disabled = true;
-    }
-
-    // Check fill-in-blank answer
-    function checkFillInAnswer(userAnswer) {
-        // If an answer is already submitted, do nothing
-        if (selectedOption !== null) return;
-
-        selectedOption = userAnswer;
-        const currentQuestion = questions[currentQuestionIndex];
-        const input = document.getElementById('answer-input');
-        const submitBtn = input.nextElementSibling;
-        
-        // Disable input and submit button
-        input.disabled = true;
-        submitBtn.disabled = true;
-
-        // Apply formatting to the input based on correctness
-        const isCorrect = userAnswer.trim() === currentQuestion.answer;
-        if (isCorrect) {
-            input.classList.add('is-valid');
-            score++;
-            updateScore();
-            feedbackElement.textContent = "Đúng! " + currentQuestion.explanation;
-            feedbackElement.classList.add('bg-success', 'text-white');
-        } else {
-            input.classList.add('is-invalid');
-            feedbackElement.textContent = `Sai rồi. Đáp án đúng là: ${currentQuestion.answer}. ${currentQuestion.explanation}`;
-            feedbackElement.classList.add('bg-danger', 'text-white');
-        }
-
-        feedbackElement.style.display = 'block';
-        nextBtn.disabled = false;
-    }
-
-    // Reset the question state
-    function resetState() {
-        while (optionsElement.firstChild) {
-            optionsElement.removeChild(optionsElement.firstChild);
-        }
-        feedbackElement.style.display = 'none';
-        feedbackElement.textContent = '';
-        feedbackElement.className = 'feedback';
-        selectedOption = null;
     }
 
     // Handle option selection
@@ -325,7 +332,7 @@ document.addEventListener('DOMContentLoaded', function() {
             button.classList.add('correct');
             score++;
             updateScore();
-            feedbackElement.textContent = "Đúng! " + currentQuestion.explanation;
+            feedbackElement.innerHTML = `<div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Bài giải</div>${currentQuestion.explanation.replace('Bài giải\n', '')}`;
             feedbackElement.classList.add('bg-success', 'text-white');
         } else {
             button.classList.add('incorrect');
@@ -335,12 +342,73 @@ document.addEventListener('DOMContentLoaded', function() {
                     opt.classList.add('correct');
                 }
             });
-            feedbackElement.textContent = "Sai rồi. " + currentQuestion.explanation;
+            feedbackElement.innerHTML = `<div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Bài giải</div>${currentQuestion.explanation.replace('Bài giải\n', '')}`;
             feedbackElement.classList.add('bg-danger', 'text-white');
         }
 
         feedbackElement.style.display = 'block';
         nextBtn.disabled = false;
+    }
+
+    // Check fill-in-blank answer
+    function checkFillInAnswer(userAnswer) {
+        // If an answer is already submitted, do nothing
+        if (selectedOption !== null) return;
+
+        selectedOption = userAnswer;
+        const currentQuestion = questions[currentQuestionIndex];
+        const input = document.getElementById('answer-input');
+        const hourInput = document.getElementById('hour-input');
+        const minuteInput = document.getElementById('minute-input');
+        const submitBtn = input ? input.nextElementSibling.nextElementSibling : hourInput.nextElementSibling.nextElementSibling;
+        
+        // Disable inputs and submit button
+        if (input) {
+            input.disabled = true;
+        } else {
+            hourInput.disabled = true;
+            minuteInput.disabled = true;
+        }
+        submitBtn.disabled = true;
+
+        // Apply formatting to the input based on correctness
+        const isCorrect = userAnswer.trim() === currentQuestion.answer;
+        if (isCorrect) {
+            if (input) {
+                input.classList.add('is-valid');
+            } else {
+                hourInput.classList.add('is-valid');
+                minuteInput.classList.add('is-valid');
+            }
+            score++;
+            updateScore();
+            feedbackElement.innerHTML = `<div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Bài giải</div>${currentQuestion.explanation.replace('Bài giải\n', '')}`;
+            feedbackElement.classList.add('bg-success', 'text-white');
+        } else {
+            if (input) {
+                input.classList.add('is-invalid');
+            } else {
+                hourInput.classList.add('is-invalid');
+                minuteInput.classList.add('is-invalid');
+            }
+            feedbackElement.innerHTML = `<div style="text-align: center; font-weight: bold; margin-bottom: 10px;">Bài giải</div>${currentQuestion.explanation.replace('Bài giải\n', '')}`;
+            feedbackElement.classList.add('bg-danger', 'text-white');
+        }
+
+        feedbackElement.style.display = 'block';
+        nextBtn.disabled = false;
+    }
+
+    // Reset the question state
+    function resetState() {
+        while (optionsElement.firstChild) {
+            optionsElement.removeChild(optionsElement.firstChild);
+        }
+        feedbackElement.style.display = 'none';
+        feedbackElement.textContent = '';
+        feedbackElement.className = 'feedback';
+        feedbackElement.style.whiteSpace = 'pre-line';
+        selectedOption = null;
     }
 
     // Update the score display
