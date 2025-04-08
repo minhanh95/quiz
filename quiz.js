@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize the quiz
     function initQuiz() {
-        // Shuffle questions for variety
-        questions = [...quizQuestions].sort(() => Math.random() - 0.5);
+        // Không trộn câu hỏi, giữ nguyên thứ tự
+        questions = [...quizQuestions];
         currentQuestionIndex = 0;
         score = 0;
         updateScore();
@@ -235,10 +235,8 @@ document.addEventListener('DOMContentLoaded', function() {
         questionElement.textContent = currentQuestion.question;
 
         if (currentQuestion.type === "multiple-choice") {
-            // Shuffle options to randomize their order
-            const shuffledOptions = [...currentQuestion.options].sort(() => Math.random() - 0.5);
-
-            shuffledOptions.forEach(option => {
+            // Không trộn các lựa chọn, giữ nguyên thứ tự
+            currentQuestion.options.forEach(option => {
                 const button = document.createElement('button');
                 button.textContent = option;
                 button.classList.add('option', 'btn', 'btn-outline-primary', 'w-100', 'text-start');
