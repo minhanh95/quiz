@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let score = 0;
     let questions = [];
     let selectedOption = null;
-    let timeLeft = 600; // 10 phút = 600 giây
+    let timeLeft = 3600; // 60 phút = 3600 giây
     let timerInterval;
 
     // Quiz questions
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateScore();
         showQuestion();
         // Khởi động đồng hồ đếm ngược
-        timeLeft = 600; // 10 phút
+        timeLeft = 3600; // 60 phút
         updateTimerDisplay();
         startTimer();
     }
